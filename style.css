@@ -1,1 +1,8 @@
-
+@font-face {
+    font-family: 'Sabon';
+    src: url("fonts/Sabon\ Roman.ttf")
+}
+@font-face {
+    font-family: 'Circular';
+    src: url(fonts/Circular\ Std\ Book.ttf);
+}
