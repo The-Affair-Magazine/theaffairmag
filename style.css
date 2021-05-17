@@ -1,8 +1,24 @@
-@font-face {
-    font-family: 'Sabon';
-    src: url("fonts/Sabon.ttf")
+:root {
+  --light-purple: #A1A9FE;
 }
+
 @font-face {
-    font-family: 'Circular';
-    src: url(fonts/Circular.ttf);
+  font-family: 'Sabon';
+  src: url("fonts/Sabon.ttf")
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('fonts/Circular.ttf');
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Circular';
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Circular';
 }
