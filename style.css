@@ -162,7 +162,7 @@ h1.easy {
   font-size: 40px;
   line-height: 125%;
 }
-h1.mark {
+mark.easy {
   background: linear-gradient(180deg, #fff 100%, #e7d1fa 100%)
 }
 
