@@ -163,7 +163,7 @@ h1.easy {
   line-height: 125%;
 }
 mark.easy {
-  background: linear-gradient(180deg, #fff 100%, #e7d1fa 100%);
+  background: linear-gradient(180deg, #ffffff 50%, #e7d1fa 50%);
   color: black;
 }
 
