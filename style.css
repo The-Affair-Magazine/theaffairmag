@@ -1,5 +1,5 @@
 :root {
-  --light-purple: #A1A9FE;
+  --light-purple: #A1A9FE
 }
 
 @font-face {
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .nav-container .nav-link {
-  color: gray;
+  color: #BEBEBE;
   font-size: 20px;
   padding: 0 15px;
   transition: color .5s ease;
@@ -165,6 +165,9 @@ h1.easy {
 mark.easy {
   background: linear-gradient(180deg, #ffffff 50%, #e7d1fa 50%);
   color: black;
+}
+p.gray {
+  color: #BEBEBE;
 }
 
 /* Scrollbar */

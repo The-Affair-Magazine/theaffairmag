@@ -13,8 +13,8 @@ toggleNav = function() {
     }
     else {
       navLinks[i].style.display = "none";
-    }    
-  }  
+    }
+  }
 }
 
 toggleBtn = document.getElementById('toggle-btn');
