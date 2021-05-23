@@ -60,7 +60,7 @@ a:hover {
   color: gray;
   font-size: 20px;
   padding: 0 15px;
-  transition: color .5s ease;    
+  transition: color .5s ease;
 }
 
 .nav-container .nav-link-bold {
@@ -70,7 +70,7 @@ a:hover {
   color: white;
   font-size: 20px;
   padding: 20px;
-  transition: color .5s ease, background-color .5s ease;  
+  transition: color .5s ease, background-color .5s ease;
 }
 
 .nav-container .nav-link-bold:hover {
@@ -101,14 +101,14 @@ a:hover {
 }
 
 /* Page content */
-.page-container { 
+.page-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;  
+  flex-direction: row;
 }
 
 .page-title {
-  margin-bottom: 2em;  
+  margin-bottom: 2em;
   padding: 90px 100px 0;
   flex-basis: 70%;
 }
@@ -119,8 +119,8 @@ a:hover {
 
 #front-page-image {
   flex-basis: 30%;
-  margin: 0; 
-  padding-left: 0; 
+  margin: 0;
+  padding-left: 0;
   padding-right: 0;
   max-width:560px;
 }
@@ -154,6 +154,12 @@ a:hover {
   padding: 0 100px;
   display: block;
   flex-basis: 30%;
+}
+
+/* Home Page Section*/
+.easy {
+  font-size: 40px;
+  line-height: 125%;
 }
 
 /* Scrollbar */
@@ -190,7 +196,7 @@ a:hover {
   color: white !important;
   font-size: 30px;
   padding: 0 15px;
-  transition: color .5s ease;  
+  transition: color .5s ease;
 }
 
 .footer-container .footer-link:hover {
@@ -222,7 +228,7 @@ a:hover {
   }
 
   .nav-container .nav-link, .nav-link-bold {
-    display: none;    
+    display: none;
     padding: 10px;
     text-align: center;
   }
@@ -233,8 +239,8 @@ a:hover {
 
   .nav-container {
     padding: 25px;
-    flex-direction: column; 
-    text-align: center;   
+    flex-direction: column;
+    text-align: center;
   }
 
   #nav-logo {
@@ -248,7 +254,7 @@ a:hover {
   h1 {
     font-size: 50px !important;
   }
-  
+
   h2 {
     font-size: 20px;
   }
@@ -263,7 +269,7 @@ a:hover {
 
   .page-title {
     padding: 75px 50px 0;
-    margin-bottom: 1.5em !important;  
+    margin-bottom: 1.5em !important;
   }
 
   .page-title h1 {
@@ -273,13 +279,13 @@ a:hover {
   .page-section {
     padding: 0 50px 50px;
     margin-bottom: 1.5em !important;
-  }  
+  }
 
   .page-section-medium {
     padding: 0 50px 50px;
     margin-bottom: 1.5em !important;
   }
-  
+
   .page-section-small {
     padding: 0 50px 50px;
     margin-bottom: 1.5em !important;
@@ -305,7 +311,7 @@ a:hover {
   }
 
   .page-title h1 {
-    font-size: 50px !important; 
+    font-size: 50px !important;
   }
 
   .nav-container {
@@ -335,7 +341,7 @@ a:hover {
   #front-page-title {
     flex-basis: 100% !important;
   }
-  
+
   #front-page-image {
     display: none;
   }
