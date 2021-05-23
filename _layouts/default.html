@@ -14,8 +14,8 @@
    <body>
     <!--Header-->
       <header class="nav-container">
-      <a href="index.html" id="nav-logo">
-        <img src="images/affair-mag-logo.svg" style="width: 100px;">
+      <a href="{{base.url}}" id="nav-logo">
+        <img src="images/affair-mag-logo.svg">
       </a>
       <div id="toggle-btn"><i class="fas fa-bars"></i></div>
       <a class="nav-link" href="#">Get Involved</a>
@@ -29,10 +29,17 @@
 
     <!--Footer-->
     <footer class="footer-container">
-      <a class="footer-link" href="https://www.linkedin.com/company/theaffairmag/"><i class="fab fa-linkedin-in"></i></a>
-      <a class="footer-link" href="http://facebook.com/theaffairmag"><i class="fab fa-facebook"></i></a>
-      <a class="footer-link" href="https://www.instagram.com/theaffairmag/"><i class="fab fa-instagram"></i></a>
-      <a class="footer-link" href="https://github.com/theaffairmagazine/theaffairmagazine.github.io"><i class="fab fa-github"></i></a>
+      <a href="{{base.url}}" id="footer-logo">
+        <img src="images/affair-mag-logo-full.svg">
+        <p>The Affair Magazine is a 501(c)(3) dedicated to making current news understandable and fun to read with engaging graphics and meaningful artwork.</p>
+      </a>
+      <div id="footer-copyright">
+        <a class="footer-link" href="https://www.linkedin.com/company/theaffairmag/"><i class="fab fa-linkedin-in"></i></a>
+        <a class="footer-link" href="https://facebook.com/theaffairmag"><i class="fab fa-facebook"></i></a>
+        <a class="footer-link" href="https://www.instagram.com/theaffairmag/"><i class="fab fa-instagram"></i></a>
+        <a class="footer-link" href="https://github.com/theaffairmag/theaffairmag.github.io"><i class="fab fa-github"></i></a>
+        <p>© 2021 The Affair Magazine</p>
+      </div>      
     </footer>
  </body>
  <script src="script.js"></script>
