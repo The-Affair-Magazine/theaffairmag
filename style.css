@@ -59,7 +59,7 @@ a:hover {
 
 .nav-container.scrolled {
   background: rgba(255, 255, 255, .9) !important;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(25px);
 }
 
 .nav-container .nav-link {
