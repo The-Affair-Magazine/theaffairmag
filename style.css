@@ -94,7 +94,7 @@ a:hover {
 }
 
 #nav-logo img {
-  max-width: 8vw;
+  max-width: 5vw;
   min-width: 100px;
   height: auto;
 }
@@ -139,7 +139,7 @@ a:hover {
 
 .section-title {
   margin-bottom: 1em;
-  padding: 90px 100px 0;
+  padding: 0 100px;
 }
 
 .page-block {
