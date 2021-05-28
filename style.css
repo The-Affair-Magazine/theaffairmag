@@ -358,6 +358,8 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2em;
 }
 
 .author-card .author-pic {
@@ -367,6 +369,10 @@ a:hover {
   padding: 30px;
   position: relative;
   margin-left: auto;
+}
+
+.author-card .author-info {
+  padding: 30px;
 }
 
 
@@ -504,7 +510,7 @@ a:hover {
   .page-section {
     justify-content: center;
   }
-  .page-section div {
+  .page-section > div {
     flex-basis: 100% !important;
   }
   #front-page-image {
@@ -524,6 +530,22 @@ a:hover {
   }
   .footer-container #footer-logo p {
     display: none;
+  }
+  .author-card {
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+  .author-card .author-info {
+    flex-basis: 50% !important;
+  }
+  .author-card .author-pic {
+    margin: 0 !important;
+    width: 100px;
+    height: 100px;
+  }
+  .nav-logo {
+    max-width: 5vw !important;
   }
 }
 
