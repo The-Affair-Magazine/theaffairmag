@@ -268,7 +268,7 @@ a:hover {
   padding-bottom: 2em;
 }
 
-.carousel-card {
+.post-card {
   padding: 15px;
   margin: 1em;
   color: black;
@@ -319,27 +319,54 @@ a:hover {
   right: 10px;
 }
 
-
-.carousel-card:hover {
+.post-card:hover {
   transform: translateY(-7px);
   box-shadow: 0px 15px 20px rgb(43 50 92 / 15%);
 }
 
-.carousel-card .card-desc {
+.post-card .card-desc {
   position: absolute;
   bottom: 0; 
 }
 
-.carousel-card .card-desc {
+.post-card .card-desc {
   padding: 10px 10px 20px 10px !important;
   line-height: 1.2em;
 }
 
-.carousel-card .card-desc h2, .carousel-card .card-desc p {
+.post-card .card-desc h2, .post-card .card-desc p {
   margin: 0 !important;
   margin-bottom: .5em !important;
   padding: 0 !important;
   font-size: 18px;
+}
+
+.post-grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.post-grid-container .post-card {
+  min-width: 300px;
+}
+
+.author-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.author-card .author-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  position: relative;
+  margin-left: auto;
 }
 
 
@@ -435,7 +462,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
   }
-  .carousel-card {
+  .post-card {
     width: auto;
   }
   .carousel-btn {

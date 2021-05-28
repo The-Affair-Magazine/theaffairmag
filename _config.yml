@@ -1,2 +1,29 @@
 exclude:
   - .jekyll-cache
+
+
+
+defaults:
+- 
+  scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "authors/:title"
+    layout: author
+- 
+  scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    author: "The Affair Mag"
+    image: /images/blank-profile.png
+    date-joined: 
+    positions: 
+    email: 
+
+collections: 
+  authors: 
+    title: Authors
+    output: true

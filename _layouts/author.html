@@ -26,21 +26,53 @@
 
     <!--Page content-->    
     <div class="page-section">
-      <div class="page-title">    
-        <img class="post-image" src="{{page.image}}">
-        <h1>{{page.title}}</h1>
-        <div class="post-byline">
-          <i class="fas fa-user-circle"></i>
-          {% assign author = site.authors | where: 'name', page.author | first %}
-          {% if author %}
-            <p><a href="{{ author.url }}">{{ author.name }}</a></p>
-          {% endif %}
-        </div>                
+      <div class="page-title"> 
+        <div class="author-card">
+          <div class="author-info">
+            <h1>{{ page.title }}</h1> 
+            <h2>Joined in {{ page.date-joined }}</h2>
+            <h2>
+              {{ page.positions }}
+            </h2>
+          </div>
+          <div class="author-pic" style="background: url('{{ page.image }}'); background-size: contain; background-repeat: no-repeat;"></div>
+        </div>               
       </div>
     </div>
-    <div class="page-section">
-      <div class="page-block-medium">
-        {{ content }}
+    <div class="page-section" style="background-color: var(--pink);">
+      <div class="page-block-medium" style="flex-basis: 100%;">
+        <div class="post-grid-container">             
+          {% assign posts = site.posts | where: 'author', page.name %}
+          {% for post in posts %}
+            <a href="{{post.url}}">
+              <div class="post-card" style="background-color: white; overflow: clip;">
+                <div class="card-desc">
+                  <h2>{{post.title}}</h2>
+                  <h2>{{post.author}}</h2>
+                  <p>{{post.excerpt}}</p>
+                </div>            
+              </div>
+            </a> 
+            <style>
+              .post-card:before {
+              content: "";
+              z-index: -1;
+              position: absolute;
+              top: -50%;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              max-width: inherit;  
+              border-radius: 30px;
+              transform: rotate(15deg);
+              background: url({{post.image}});
+              background-size: cover;
+              background-position: center;
+              background-origin: content-box;
+            }
+            </style>
+          {% endfor %}
+        </div>
       </div>      
     </div>
     

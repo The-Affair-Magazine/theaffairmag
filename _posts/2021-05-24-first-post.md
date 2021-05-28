@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "First Post"
-author: The Affair Mag
-image: "/images/sample-post-image.png"
+author: "The Affair Mag"
+image: /images/sample-post-image.png
 excerpt: "This is a quick post summary. Click to read more."
 ---
 
