@@ -1,7 +1,9 @@
 :root {
   --light-purple: #A1A9FE;
+  --dark-purple: #8187c9;
   --teal: #25CED1;
   --pink: #f7edff;
+  --dark-pink: #e7d1fa;
 }
 
 @font-face {
@@ -26,7 +28,7 @@ a {
   color: var(--light-purple);
   text-decoration: none;
   transition: color .5s ease;
-  font-size: 20px;
+  font-size: inherit;
 }
 
 p {
@@ -132,17 +134,29 @@ a:hover {
   align-items: flex-start;
   margin-bottom: 2em;
   max-width: 100vw;
+  width: 100%;
 }
 
 .page-title {
   padding: 50px 100px 0;
   flex-basis: 100%;
+  margin-bottom: 2em;
+}
+
+.post-title {
+  margin-bottom: .2em;
 }
 
 .section-title {
   padding: 0 100px;
-  flex-basis: 100%;
-  margin-bottom: 1em;
+  flex-basis: 75%;
+  margin: 2em 0;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* style page-block on left column */
@@ -178,7 +192,7 @@ a:hover {
 }
 
 .low-highlight mark {
-  background: linear-gradient(180deg, #ffffff 50%, #e7d1fa 50%);
+  background: linear-gradient(180deg, transparent 50%, #e7d1fa 50%);
   color: black;
 }
 
@@ -188,6 +202,7 @@ a:hover {
 
 #front-page-title {
   flex-basis: 50%;
+  margin-bottom: 0;
 }
 
 #front-page-image {
@@ -265,7 +280,7 @@ a:hover {
   overflow-x: hidden;
   scroll-behavior: smooth;
   max-width: 100vw;
-  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .post-card {
@@ -318,6 +333,89 @@ a:hover {
 #next {
   right: 10px;
 }
+
+.roles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.role-card {
+  padding: 30px;
+  text-align: center;
+}
+
+.issues-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: .5em;
+}
+
+.issue-card {
+  box-sizing: border-box;
+  flex-basis: 15%;
+  box-shadow: 0px 15px 20px rgb(43 50 92 / 5%);
+  display: block;
+  max-width: 250px;
+  border-radius: 40px;
+  margin-bottom: 1.5em;
+  transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.issue-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 15px 20px rgb(43 50 92 / 25%);
+}
+
+.issue-card img {
+  display: block;
+  width: inherit;
+  max-width: inherit;
+  border-radius: 0 0 40px 40px;
+}
+
+.issues-btn-container {
+  margin-top: 1.5em; 
+  margin-left: auto;
+}
+
+.get-featured-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.get-featured-card {
+  text-align: center;
+  flex-basis: 20%;
+}
+
+.get-featured-img {
+  height: 110px;
+  display: block;
+}
+
+.get-featured-card h1 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+  color: white !important;
+  margin: 0.5em auto;
+  padding: 5px;
+}
+
+.get-featured-card a {
+  color: white !important
+}
+
+
+/* Blog posts (article pages) */
 
 .post-card:hover {
   transform: translateY(-7px);
@@ -375,9 +473,6 @@ a:hover {
   padding: 30px;
 }
 
-
-/* Blog posts (article pages) */
-
 .post-image {
   width: 100%;
   margin: 0 auto;
@@ -393,6 +488,96 @@ a:hover {
 .post-byline i, .post-byline p { 
   display: inline-block;
   padding-left: .5em;
+}
+
+
+/* Join Us page */
+
+.accordion {
+  margin-bottom: 2em;
+}
+
+.accordion details summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion details {
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 2.5em;
+  cursor: pointer;
+}
+
+.accordion details summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion details > summary {
+  list-style-type: none;
+}
+
+.accordion  details > summary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=")
+    no-repeat 50% 50% / 1em 1em;
+  width: 1.5em;
+  height: 1.5em;
+  transition: transform 1s ease;  
+}
+
+.accordion summary {
+  width: 100%;
+  padding-left: 30px;
+  font-size: 20px;
+  transition: color .25s ease;
+  overflow-wrap: break-word;
+}
+
+.accordion p {
+  margin: 0;
+  padding-left: 30px;
+}
+
+.accordion summary:hover {
+  color: var(--light-purple);
+}
+
+.accordion summary:focus {
+  outline: none;
+}
+
+.accordion details[open] summary:before {
+  transform: rotate(90deg);  
+}
+
+.accordion details[open] > summary {
+  color: #8187c9;
+}
+
+.role-desc-time {
+  float: right;
+  display: inline;  
+}
+
+.role-desc-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+
+.role-desc-card i {
+  flex-basis: 10%;
+}
+
+.role-desc-card .role-desc-text {
+  flex-basis: 80%;
+}
+
+#issues-title {
+  flex-basis: auto;
 }
 
 
@@ -476,6 +661,19 @@ a:hover {
   }
 }
 
+/* Toggle issues buttons */
+
+@media screen and (max-width: 1244px) {
+  #issues-title {
+    flex-basis: 75%;
+  }
+  .issues-btn-container {
+    margin: -3em auto 2em auto !important;  
+    text-align: center;
+    padding-right: 0 !important;
+  }
+}
+
 /* Toggle nav */
 
 @media screen and (max-width: 980px) {
@@ -513,6 +711,9 @@ a:hover {
   .page-section > div {
     flex-basis: 100% !important;
   }
+  .page-title {
+    flex-basis: 100%;
+  }
   #front-page-image {
     padding-top: 0;
     margin: 0 auto;
@@ -547,6 +748,9 @@ a:hover {
   .nav-logo {
     max-width: 5vw !important;
   }
+  .role-card {
+    padding: 1em;
+  }
 }
 
 
@@ -558,6 +762,7 @@ a:hover {
   }
   h2 {
     font-size: 20px;
+    margin-bottom: 0;
   }
   p {
     font-size: 18px;
@@ -582,6 +787,10 @@ a:hover {
   }
   .section-title {
     padding: 25px 50px 50px;
+    margin: .5em 0;
+  }
+  .page-title {
+    margin: 1em 0;
   }
   #front-page-title {
     flex-basis: 100% !important;
@@ -592,6 +801,16 @@ a:hover {
   }
   .post-image {
     margin-bottom: 40px;
+  }
+  .role-desc-card img {
+    display: none;
+  }
+  .role-desc-card p {
+    flex-basis: 100%;
+  }
+  .role-desc-time {
+    display: block;
+    float: none;
   }
 }
 
@@ -628,5 +847,9 @@ a:hover {
   }
   .footer-link {
     font-size: 15px;
+  }
+  .role-card {
+    padding: 0;
+    padding-bottom: 2em;
   }
 }
