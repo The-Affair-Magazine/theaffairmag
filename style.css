@@ -552,8 +552,20 @@ a:hover {
   transform: rotate(90deg);  
 }
 
-.accordion details[open] > summary {
+/* .accordion details[open] > summary {
   color: #8187c9;
+} */
+
+.accordion.role-descs details[open]:nth-of-type(3n + 1) > summary {
+  color: var(--teal);
+}
+
+.accordion.role-descs details[open]:nth-of-type(3n + 2) > summary {
+  color: var(--light-purple);
+}
+
+.accordion.role-descs details[open]:nth-of-type(3n + 3) > summary {
+  color: var(--dark-pink);
 }
 
 .role-desc-time {
