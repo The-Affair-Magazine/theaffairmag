@@ -22,32 +22,38 @@ layout: default
     <div class="page-block-medium" style="flex-basis: 100%; width: 100vw;">
       <div class="carousel-container">
         {% for post in site.posts %}
-          <a href="{{post.url}}">
+          <a href="{{post.url}}" class="post-card-post-link">
             <div class="post-card" style="background-color: white; overflow: clip;">
               <div class="card-desc">
                 <h2>{{post.title}}</h2>
-                <h2>{{post.author}}</h2>
+                <!-- <h2>{{post.author}}</h2> -->
+                {% assign author = site.authors | where: "name", post.author | first %}
+                <form action="{{author.url}}">                  
+                  {% if author %}
+                    <button type="submit"><h2>{{ author.name }}</h2><button>
+                  {% endif %}
+                </form>
                 <p>{{post.excerpt}}</p>
               </div>            
             </div>
-          </a>          
+          </a>                                        
           <style>
             .post-card:before {
-            content: "";
-            z-index: -1;
-            position: absolute;
-            top: -50%;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            max-width: inherit;  
-            border-radius: 40px;
-            transform: rotate(7deg);
-            background: url({{post.image}});
-            background-size: cover;
-            background-position: center;
-            background-origin: content-box;
-          }
+              content: "";
+              z-index: -1;
+              position: absolute;
+              top: -50%;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              max-width: inherit;  
+              border-radius: 40px;
+              transform: rotate(7deg);
+              background: url({{post.image}});
+              background-size: cover;
+              background-position: center;
+              background-origin: content-box;
+            }
           </style>
         {% endfor %}
         <div class="carousel-btn-container">

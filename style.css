@@ -415,8 +415,6 @@ a:hover {
 }
 
 
-/* Blog posts (article pages) */
-
 .post-card:hover {
   transform: translateY(-7px);
   box-shadow: 0px 15px 20px rgb(43 50 92 / 15%);
@@ -450,6 +448,23 @@ a:hover {
 .post-grid-container .post-card {
   min-width: 300px;
 }
+
+.post-card .card-desc form button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-family: 'Circular';
+  text-align: left;
+  transition: color .5s ease;
+}
+
+.post-card .card-desc form button:hover {
+  color: #6e74b6;
+}
+
+
+/* Blog posts (article pages) */
 
 .author-card {
   display: flex;
