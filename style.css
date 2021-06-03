@@ -490,6 +490,20 @@ a:hover {
   padding-left: .5em;
 }
 
+.post-content h2 {
+  padding-top: 1em;
+}
+
+.post-content img {
+  width: 70%;
+  margin: .5em auto;
+  margin-bottom: 0;
+  display: block;
+}
+
+.post-content center p {
+  padding-top: 0;
+}
 
 /* Join Us page */
 
