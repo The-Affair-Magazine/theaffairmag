@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>The Affair Magazine</title>
     <meta name="description" content="The Affair Magazine a by students, for students magazine publication, aiming to educate busy students about current affairs using interesting articles with bright graphics!">
-    <link rel="shortcut icon" type="/image/png" href="{{base.url}}/images/affair-mag-logo.svg">
+    <link rel="shortcut icon" type="/image/png" href="{{ site.baseurl }}/images/affair-mag-logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="{{base.url}}/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
   </head>
 
    <body>
     <!--Header-->
       <header class="nav-container">
-      <a href="{{base.url}}/index.html" id="nav-logo">
-        <img src="{{base.url}}/images/affair-mag-logo.svg">
+      <a href="{{ site.baseurl }}/index.html" id="nav-logo">
+        <img src="{{ site.baseurl }}/images/affair-mag-logo.svg">
       </a>
       <div id="toggle-btn"><i class="fas fa-bars"></i></div>
-      <a class="nav-link" href="{{base.url}}/join-us.html">Get Involved</a>
+      <a class="nav-link" href="{{ site.baseurl }}/join-us.html">Get Involved</a>
       <a class="nav-link" href="#">About</a>
       <a class="nav-link" href="#">Opportunities</a>
-      <a class=".nav link nav-link-bold" href="{{base.url}}/blog.html">Articles</a>
+      <a class=".nav link nav-link-bold" href="{{ site.baseurl }}/blog.html">Articles</a>
     </header>
 
     <!--Page content-->    
@@ -50,7 +50,7 @@
                   <div class="post-card-heading">
                     <h2>{{ post.title }}</h2>
                   {% assign author = site.authors | where: "name", post.author | first %}
-                  <form action="{{author.url}}">                  
+                  <form action="{{ author.url }}">                  
                     {% if author %}
                       <button type="submit"><h2>{{ author.name }}</h2><button>
                     {% endif %}
@@ -67,8 +67,8 @@
     
     <!--Footer-->
     <footer class="footer-container">
-      <a href="{{base.url}}/index.html" id="footer-logo">
-        <img src="{{base.url}}/images/affair-mag-logo-full.svg">
+      <a href="{{ site.baseurl }}/index.html" id="footer-logo">
+        <img src="{{ site.baseurl }}/images/affair-mag-logo-full.svg">
         <p>The Affair Magazine is a 501(c)(3) dedicated to making current news understandable and fun to read with engaging graphics and meaningful artwork.</p>
       </a>
       <div id="footer-copyright">
@@ -80,5 +80,5 @@
       </div>      
     </footer>
  </body>
- <script src="{{base.url}}/script.js"></script>
+ <script src="{{ site.baseurl }}/script.js"></script>
 </html>
