@@ -21,22 +21,20 @@
       <a class="nav-link" href="{{base.url}}/join-us.html">Get Involved</a>
       <a class="nav-link" href="#">About</a>
       <a class="nav-link" href="#">Opportunities</a>
-      <a class=".nav link nav-link-bold" href="#">Articles</a>
+      <a class=".nav link nav-link-bold" href="{{base.url}}/blog.html">Articles</a>
     </header>
 
     <!--Page content-->    
-    <div class="page-section">
-      <div class="page-title">    
-        <img class="post-image" src="{{page.image}}">
-        <h1 class="post-title">{{page.title}}</h1>
-        <div class="post-byline">
-          <i class="fas fa-user-circle"></i>
-          {% assign author = site.authors | where: 'name', page.author | first %}
-          {% if author %}
-            <p><a href="{{ author.url }}">{{ author.name }}</a></p>
-          {% endif %}
-        </div>                
-      </div>
+    <div class="page-title post-heading">    
+      <img class="post-image" src="{{page.image}}">
+      <h1 class="post-title">{{ page.title }}</h1><span class="post-category">{{ page.category }}</span>
+      <h2><em>{{ page.excerpt }}</em></h2>
+      <div class="post-byline">        
+        {% assign author = site.authors | where: 'name', page.author | first %}
+        {% if author %}
+          <p>by: <a href="{{ author.url }}">{{ author.name }}</a></p>
+        {% endif %}
+      </div>                
     </div>
     <div class="page-section">
       <div class="page-block-medium post-content">

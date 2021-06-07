@@ -2,8 +2,9 @@
 layout: post
 title: "The Arts during Quarantine"
 author: "The Affair Mag"
-image: /images/sample-post-image.png
-excerpt: "Traditional art adapting to COVID."
+image: /images/post-images/july-2020/manet-jeanne.png
+excerpt: "How has the world of art adapted to having to shift to socially distanced standards?"
+category: "Art & Media"
 ---
 
 How has the world of art adapted to having to shift to socially distanced standards?  

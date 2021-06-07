@@ -21,7 +21,7 @@
       <a class="nav-link" href="{{base.url}}/join-us.html">Get Involved</a>
       <a class="nav-link" href="#">About</a>
       <a class="nav-link" href="#">Opportunities</a>
-      <a class=".nav link nav-link-bold" href="#">Articles</a>
+      <a class=".nav link nav-link-bold" href="{{base.url}}/blog.html">Articles</a>
     </header>
 
     <!--Page content-->    
@@ -31,9 +31,8 @@
           <div class="author-info">
             <h1>{{ page.title }}</h1> 
             <h2>Joined in {{ page.date-joined }}</h2>
-            <h2>
-              {{ page.positions }}
-            </h2>
+            <h2>{{ page.positions }}</h2>
+            <a href="mailto:{{ page.email }}"><i class="fas fa-envelope" style="font-size: 22px;"></i></a>
           </div>
           <div class="author-pic" style="background: url('{{ page.image }}'); background-size: contain; background-repeat: no-repeat;"></div>
         </div>               
@@ -44,33 +43,23 @@
         <div class="post-grid-container">             
           {% assign posts = site.posts | where: 'author', page.name %}
           {% for post in posts %}
-            <a href="{{post.url}}">
-              <div class="post-card" style="background-color: white; overflow: clip;">
+            <a href="{{ post.url }}" class="post-card-post-link">
+              <div class="post-card">
+                <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
                 <div class="card-desc">
-                  <h2>{{post.title}}</h2>
-                  <h2>{{post.author}}</h2>
-                  <p>{{post.excerpt}}</p>
+                  <div class="post-card-heading">
+                    <h2>{{ post.title }}</h2>
+                  {% assign author = site.authors | where: "name", post.author | first %}
+                  <form action="{{author.url}}">                  
+                    {% if author %}
+                      <button type="submit"><h2>{{ author.name }}</h2><button>
+                    {% endif %}
+                  </form>
+                  </div>                
+                  <p>{{ post.excerpt }}</p>
                 </div>            
               </div>
-            </a> 
-            <style>
-              .post-card:before {
-              content: "";
-              z-index: -1;
-              position: absolute;
-              top: -50%;
-              left: 0;
-              height: 100%;
-              width: 100%;
-              max-width: inherit;  
-              border-radius: 40px;
-              transform: rotate(7deg);
-              background: url({{post.image}});
-              background-size: cover;
-              background-position: center;
-              background-origin: content-box;
-            }
-            </style>
+            </a>    
           {% endfor %}
         </div>
       </div>      

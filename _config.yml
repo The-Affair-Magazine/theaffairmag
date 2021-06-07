@@ -1,8 +1,6 @@
 exclude:
   - .jekyll-cache
 
-
-
 defaults:
 - 
   scope:

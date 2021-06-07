@@ -8,7 +8,7 @@ layout: default
       <h1 class="low-highlight">We make it <mark>easy to read and understand current affairs.</mark></h1>
       <p class="gray">The Affair Magazine is a 501(c)(3) dedicated to making current news understandable and fun to read with engaging graphics and meaningful artwork.</p>
       <a href="#" class="link-btn">About</a>
-      <a href="#" class="link-btn-inverted">Blog</a>
+      <a href="{{base.url}}/blog.html" class="link-btn-inverted">Blog</a>
     </div>
     <div class="page-block" id="front-page-image">
       <img src="images/front-page-image.svg">
@@ -22,39 +22,23 @@ layout: default
     <div class="page-block-medium" style="flex-basis: 100%; width: 100vw;">
       <div class="carousel-container">
         {% for post in site.posts %}
-          <a href="{{post.url}}" class="post-card-post-link">
-            <div class="post-card" style="background-color: white; overflow: clip;">
+          <a href="{{ post.url }}" class="post-card-post-link">
+            <div class="post-card">
+              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
               <div class="card-desc">
-                <h2>{{post.title}}</h2>
-                <!-- <h2>{{post.author}}</h2> -->
+                <div class="post-card-heading">
+                  <h2>{{ post.title }}</h2>
                 {% assign author = site.authors | where: "name", post.author | first %}
                 <form action="{{author.url}}">                  
                   {% if author %}
                     <button type="submit"><h2>{{ author.name }}</h2><button>
                   {% endif %}
                 </form>
-                <p>{{post.excerpt}}</p>
+                </div>                
+                <p>{{ post.excerpt }}</p>
               </div>            
             </div>
           </a>                                        
-          <style>
-            .post-card:before {
-              content: "";
-              z-index: -1;
-              position: absolute;
-              top: -50%;
-              left: 0;
-              height: 100%;
-              width: 100%;
-              max-width: inherit;  
-              border-radius: 40px;
-              transform: rotate(7deg);
-              background: url({{post.image}});
-              background-size: cover;
-              background-position: center;
-              background-origin: content-box;
-            }
-          </style>
         {% endfor %}
         <div class="carousel-btn-container">
           <i class="fas fa-chevron-left carousel-btn" id="prev"></i>
