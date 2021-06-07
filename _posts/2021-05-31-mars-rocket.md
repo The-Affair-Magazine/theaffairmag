@@ -2,7 +2,7 @@
 layout: post
 title: "Mars Rocket"
 author: "The Affair Mag"
-image: /images/post-images/may-2021/mars-rocket.png
+image: /images/post-images/may-2021/mars-rocket.PNG
 excerpt: "A recent successful SpaceX rocket landing has brought us closer to sending humans to the Moon and Mars."
 category: "Tech & Design"
 ---

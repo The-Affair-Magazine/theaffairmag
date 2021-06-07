@@ -25,24 +25,35 @@
     </header>
 
     <!--Page content-->    
-    <div class="page-title post-heading">    
-      <img class="post-image" src="{{page.image}}">
-      {% assign category = site.categories | where: 'title', page.category | first %}
-      <h1 class="post-title">{{ page.title }}</h1>
-      <span class="post-category">
-        <a href="{{ category.url }}">{{ page.category }}</a>
-      </span>
-      <h2><em>{{ page.excerpt }}</em></h2>
-      <div class="post-byline">        
-        {% assign author = site.authors | where: 'name', page.author | first %}
-        {% if author %}
-          <p>by: <a href="{{ author.url }}">{{ author.name }}</a></p>
-        {% endif %}
-      </div>                
+    <div class="page-section">
+      <div class="page-title center"> 
+        <h1 class="low-highlight"><mark>{{ page.title }}</mark></h1>       
+      </div>
     </div>
     <div class="page-section">
-      <div class="page-block-medium post-content">
-        {{ content }}
+      <div class="page-block-medium" style="flex-basis: 100%;">
+        <div class="post-grid-container">             
+          {% assign posts = site.posts | where: 'category', page.title %}
+          {% for post in posts %}
+            <a href="{{ post.url }}" class="post-card-post-link">
+              <div class="post-card">
+                <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
+                <div class="card-desc">
+                  <div class="post-card-heading">
+                    <h2>{{ post.title }}</h2>
+                  {% assign author = site.authors | where: "name", post.author | first %}
+                  <form action="{{ author.url }}">                  
+                    {% if author %}
+                      <button type="submit"><h2>{{ author.name }}</h2><button>
+                    {% endif %}
+                  </form>
+                  </div>                
+                  <p>{{ post.excerpt }}</p>
+                </div>            
+              </div>
+            </a>    
+          {% endfor %}
+        </div>
       </div>      
     </div>
     

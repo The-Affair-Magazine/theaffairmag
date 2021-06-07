@@ -2,7 +2,7 @@
 layout: post
 title: "India's COVID-19 Situation"
 author: "The Affair Mag"
-image: /images/post-images/may-2021/india-covid.png
+image: /images/post-images/may-2021/india-covid.PNG
 excerpt: "World Health Organization (WHO) says that India's Covid-19 situation is 'beyond heartbreaking.'"
 category: "Politics & World Events"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "COVID Curtain Call"
 author: "The Affair Mag"
-image: /images/post-images/may-2021/curtain-call.png
+image: /images/post-images/may-2021/curtain-call.PNG
 excerpt: "Broadway has been closed for over a year now, but plans are being made to reopen it. Is this a good idea?"
 category: "Art & Media"
 ---

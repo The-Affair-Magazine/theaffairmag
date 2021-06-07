@@ -2,7 +2,7 @@
 layout: post
 title: "Jewish Immigration and the World Wars"
 author: "The Affair Mag"
-image: /images/post-images/may-2021/jewish-immigration.png
+image: /images/post-images/may-2021/jewish-immigration.PNG
 excerpt: "WW1 led many countries to create new immigration policies that prevented certain people from entering..."
 category: "Politics & World Events"
 ---

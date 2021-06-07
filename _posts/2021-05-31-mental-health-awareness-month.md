@@ -2,7 +2,7 @@
 layout: post
 title: "Mental Health Awareness Month"
 author: "The Affair Mag"
-image: /images/post-images/may-2021/mha-month.png
+image: /images/post-images/may-2021/mha-month.PNG
 excerpt: "Mental Health Awareness Month strives to bring attention to mental health and blot out the extant stigma."
 category: "Politics & World Events"
 ---

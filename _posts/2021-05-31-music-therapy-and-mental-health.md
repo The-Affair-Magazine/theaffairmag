@@ -2,7 +2,7 @@
 layout: post
 title: "Music Therapy & Mental Health"
 author: "The Affair Mag"
-image: /images/post-images/may-2021/music-therapy.png
+image: /images/post-images/may-2021/music-therapy.PNG
 excerpt: "Music is much more than a tune playing on your phone, and can help you improve your mental health."
 category: "Art & Media"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Asian Hate in the Tech Industry"
 author: "The Affair Mag"
-image: /images/post-images/may-2021/asian-hate-tech.png
+image: /images/post-images/may-2021/asian-hate-tech.PNG
 excerpt: "Asian hate can be seen internationally, yet it is most common in the Tech industry. This is an issue that must come to an end."
 category: "Tech & Design"
 ---

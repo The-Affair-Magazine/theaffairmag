@@ -491,6 +491,19 @@ a:hover {
   display: inline-block;
   margin-bottom: 2em;
   width: fit-content;
+  transition: transform .5s ease;
+}
+
+.post-category a {
+  color: black;
+}
+
+.post-category:hover a {
+  color: #6e74b6;
+}
+
+.post-category:hover {
+  transform: translateY(-3px);
 }
 
 .author-card {

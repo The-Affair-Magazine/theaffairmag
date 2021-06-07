@@ -2,7 +2,7 @@
 layout: post
 title: "Nijeer Parks"
 author: "The Affair Mag"
-image: /images/post-images/may-2021/nijeer-parks.png
+image: /images/post-images/may-2021/nijeer-parks.PNG
 excerpt: "A black man gets arrested due to facial recognition gone wrong, leading to his arrest for crimes he did not commit."
 category: "Tech & Design"
 ---
