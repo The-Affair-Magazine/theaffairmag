@@ -477,6 +477,30 @@ a:hover {
 }
 
 
+/* Blog page */
+
+.categories-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.categories-container .category-btn {
+  /* background-color: var(--teal);
+  border-radius: 30px; */
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.categories-container .category-btn a {
+  color: white;
+}
+
+.categories-container .category-btn:hover a {
+  color: var(--light-purple);
+  text-decoration: underline;
+}
+
 /* Blog posts (article pages) */
 
 .post-heading {
