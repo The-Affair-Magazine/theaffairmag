@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Asian Hate in the Tech Industry"
-author: "The Affair Mag"
+author: "Anvitha Mattapalli"
 image: /images/post-images/may-2021/asian-hate-tech.PNG
 excerpt: "Asian hate can be seen internationally, yet it is most common in the Tech industry. This is an issue that must come to an end."
 category: "Tech & Design"
 ---
+
+Edited by: Harvi Karatha & Taruni Manam, Blogged by: Sahithi Lingampalli
 
 Over the past year, we’ve seen an influx of anti-Asian American and Pacific Islanders (AAPI) hate crimes in almost every aspect of our lives. Unfortunately, the Tech industry is not an exception to this. The model minority myth fuels this hatred against the AAPI community.
 

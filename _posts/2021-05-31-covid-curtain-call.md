@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "COVID Curtain Call"
-author: "The Affair Mag"
-image: /images/post-images/may-2021/curtain-call.PNG
+author: "Anvitha Mattapalli"
+image: images/post-images/may-2021/Covid Curtain-Call.png
 excerpt: "Broadway has been closed for over a year now, but plans are being made to reopen it. Is this a good idea?"
 category: "Art & Media"
 ---
+
+Edited by: Ameya Aneja, Geethi Tarra & Mridula Divakar, Blogged by: Sahithi Lingampalli
 
 On March 12th, 2020, Broadway shut down due to the rising COVID-19 cases. The closure was supposed to be temporary, only for about one  month, but the pandemic caused the opening date to be pushed back. This resulted in a major setback for New York’s economy as Broadway provides approximately  97,000 jobs and $14.7 billion per year. Mayor Bill de Blasio of New York City explains that, "Broadway needs to come back, and we will move heaven and earth to bring Broadway back.” Broadway is scheduled to reopen on September 14, 2021, 18 months after it first closed. Tickets are currently being sold at 100% theater capacity. 
 

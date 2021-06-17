@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Nijeer Parks"
-author: "The Affair Mag"
+author: "Sahithi Lingampalli"
 image: /images/post-images/may-2021/nijeer-parks.PNG
 excerpt: "A black man gets arrested due to facial recognition gone wrong, leading to his arrest for crimes he did not commit."
 category: "Tech & Design"
 ---
+
+Edited by: Aarav Navani, Anvitha Mattapalli & Uday Lingampalli, Blogged by Sahithi Lingampalli
 
 Facial recognition. It can be used from anything as simple as unlocking your phone — to helping police find suspects from fake driver licenses. And in Nijeer Parks’s case, he was a suspect found from a fake driver’s license, accused of shoplifting candy and trying to hit a police officer. It was  — as well as another case of facial recognition gone awry. 
 

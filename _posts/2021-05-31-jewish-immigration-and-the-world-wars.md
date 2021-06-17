@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Jewish Immigration and the World Wars"
-author: "The Affair Mag"
+author: "Parker McElroy"
 image: /images/post-images/may-2021/jewish-immigration.PNG
 excerpt: "WW1 led many countries to create new immigration policies that prevented certain people from entering..."
 category: "Politics & World Events"
 ---
+Edited by: Harini Akurathi, Neve Walker & Taruni Manam, Blogged by: Sahithi Lingampalli
 
 After World War 1, the United States saw a substantial decrease in the number of immigrants coming into the country. The government took advantage of this period by introducing new immigration laws, ones that would preserve the good name of America by stopping certain people from coming into the country. These groups included people of colorcolour and Jewish people. These policies were further enforced when The Great Depression hit, as the president did not want “economic burdens” coming into the United States.
 

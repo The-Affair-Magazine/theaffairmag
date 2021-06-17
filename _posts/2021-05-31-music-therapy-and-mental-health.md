@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Music Therapy & Mental Health"
-author: "The Affair Mag"
-image: /images/post-images/may-2021/music-therapy.PNG
+author: "Anvitha Mattapalli"
+image: images/post-images/may-2021/music therapy and mental health.png
 excerpt: "Music is much more than a tune playing on your phone, and can help you improve your mental health."
 category: "Art & Media"
 ---
+
+Edited by Taruni Manam & Geethi Tarra, Blogged by: Sahithi Lingampalli
 
 Music is all around us. It’s in nature, instruments, and, of course, in TikTok. Recent studies have shown that music holds the power to improve our mental health. Music therapy is a type of healthcare career where professionals therapeutically use music to help patients physically, emotionally, and mentally. Different applications of music therapy can help patients in different ways.
 

@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "AAPI Heritage Month"
-author: "The Affair Mag"
+author: "Ashmita Annamalai" "Arushi Choudhary (of ColorForEmpowerment)"
 image: /images/post-images/may-2021/aapi-month.jpg
 excerpt: "AAPI Month pays tribute to the generations of contributions Asians and Pacific Islanders made to American society."
 category: "Politics & World Events"
 ---
+
+Edited by: Kavya Gurunath & Parker McElroy, Blogged by: Sahithi Lingampalli
 
 ## Why May?
 The month of May was chosen because the first transcontinental railroad wouldn’t have been possible without the efforts of Chinese immigrants on May 10, 1869. Before that, the first Japanese immigrant came to the United States on May 7, 1843, which are two of many reasons why the month of May is dedicated to Asians and Pacific Islanders. In May of 1979, the President signed a resolution that proposed the first ten days to be Asian/Pacific American Heritage Week, but recently in 1992, Congress turned the week into a month. 

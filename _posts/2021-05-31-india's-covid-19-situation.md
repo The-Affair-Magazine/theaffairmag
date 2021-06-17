@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "India's COVID-19 Situation"
-author: "The Affair Mag"
+author: "Alda Nasywa"
 image: /images/post-images/may-2021/india-covid.PNG
 excerpt: "World Health Organization (WHO) says that India's Covid-19 situation is 'beyond heartbreaking.'"
 category: "Politics & World Events"
 ---
+
+Edited by: Taruni Manam, Neve Walker & Parker McElroy, Blogged by: Sahithi Lingampalli
 
 The number of cases in India continues to grow. The second wave of Covid-19 caused main cities in India to have very high losses. The subcontinent located in South Asia is included in the top 5 of the list of countries with the highest increase in Covid-19 death cases. India has had a spike in recent days, with more than 250,000 deaths. On the subject of Statistik Data, some analysis specialists are nonetheless debating the original number of Covid-19 infections. Some of them feel that the virus must have reached the interior of a country that has difficulty accessing virus testing and trancing tools. They worry that because it is very difficult to trace the scale of the pandemic in far-off areas of the country, it could be that the true number of deaths and infections is five to 10 times greater. 
 

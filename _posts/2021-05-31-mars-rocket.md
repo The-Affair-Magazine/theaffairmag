@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Mars Rocket"
-author: "The Affair Mag"
+author: "Anvitha Mattapalli"
 image: /images/post-images/may-2021/mars-rocket.PNG
 excerpt: "A recent successful SpaceX rocket landing has brought us closer to sending humans to the Moon and Mars."
 category: "Tech & Design"
 ---
+
+Edited by: Dominique Samantha, Uday Lingampalli, Jason Liu, Blogged by: Sahithi Lingampalli
 
 As Earth reaches its human carrying capacity, researchers have been searching for new planets to start settlements, in order to prevent human extinction. One of the most suitable planets for this is Mars, as it has the ideal temperature,gravity and water along with similar day/year lengths. SpaceX has been working on a rocket to send to the Moon and Mars. On May 5, 2021, one of their prototype rockets, called SN15, landed successfully in Southeastern Texas.
 

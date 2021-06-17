@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Mental Health Awareness Month"
-author: "The Affair Mag"
+author: "Alda Nasywa"
 image: /images/post-images/may-2021/mha-month.PNG
 excerpt: "Mental Health Awareness Month strives to bring attention to mental health and blot out the extant stigma."
 category: "Politics & World Events"
 ---
+
+Edited by: Harini Akurathi, Neve Walker & Parker McElroy, Blogged by: Sahithi Lingampalli
 
 May has been named Mental Health Awareness month since 1949. The existence of Mental Health Awareness Month aims to raise awareness of the importance of mental and emotional health for children, adolescents, and adults. Being aware of trauma and its effects is the most important thing.
 

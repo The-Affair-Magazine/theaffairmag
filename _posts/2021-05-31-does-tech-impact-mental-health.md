@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Does Tech Impact Mental Health?"
-author: "The Affair Mag"
+author: "Anvitha Mattapalli"
 image: /images/post-images/may-2021/tech-mental-health.PNG
 excerpt: "We’ve all been told that too much technology is bad for you, but is it really that bad? And how?"
 category: "Tech & Design"
 ---
+
+Edited by: Dominique Samantha, Harvi Karatha, & Jason Liu, Blogged by: Sahithi Lingampalli
 
 I have a confession to make; my phone’s screen time may or may not be 7 hours. My parents soon confiscated it, telling me that it leads to eyestrain and back problems, but these are all physical health issues. What about mental health? Does technology impact mental health? The answer is yes. It does affect mental health for the better and for the worse.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Arts during Quarantine"
-author: "The Affair Mag"
+author: "Manushri Bapat"
 image: /images/post-images/july-2020/manet-jeanne.png
 excerpt: "How has the world of art adapted to having to shift to socially distanced standards?"
 category: "Art & Media"
