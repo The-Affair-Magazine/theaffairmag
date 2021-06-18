@@ -2,7 +2,7 @@
 layout: post
 title: "How to Help Someone Who is Suffering from a Mental Illness"
 author: "Anvitha Mattapalli"
-image: images/post-images/may-2021/How to Help Someone Who is Suffering from a Mental Illness.png
+image: /images/post-images/may-2021/How to Help Someone Who is Suffering from a Mental Illness.png
 excerpt: "It can be difficult to accept having a mental illness and reaching out for help. Read this article to learn how you can support people with mental illnesses."
 category: "Lifestyle"
 ---

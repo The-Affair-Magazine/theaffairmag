@@ -2,7 +2,7 @@
 layout: post
 title: "Liberals vs. Conservatives: How do their biologies differ?"
 author: "Mridula Divakar"
-image: images/post-images/may-2021/Liberals Vs. Conservatives .png
+image: /images/post-images/may-2021/Liberals Vs. Conservatives .png
 excerpt: "Ever wondered why people are largely considered either conservatives or liberals? The answer lies in the study of genetics!"
 category: "Politics & World Events"
 ---

@@ -2,10 +2,8 @@
 layout: post
 title: "The Fermi Paradox"
 author: "Ameya Aneja"
-image: images/post-images/may-2021/the fermi paradox.png
-excerpt: "'Somewhere, something incredible is waiting to be known.'~ Carl Sagan. 
-
-Ideologically, it seems futile and tactless to think that life will only exist on Earth: one of the many enigmatic, mundane, and tiny objects in this seemingly infinite universe. At the same time, we have never been able to rationally determine if these special circumstances and provisions on Earth are the same at a place farther beyond which remains unexplored."
+image: /images/post-images/may-2021/the fermi paradox.png
+excerpt: "We have never been able to rationally determine if these special circumstances and provisions on Earth are the same at a place farther beyond which remains unexplored."
 category: "Science"
 ---
 

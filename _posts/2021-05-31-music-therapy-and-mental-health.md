@@ -2,7 +2,7 @@
 layout: post
 title: "Music Therapy & Mental Health"
 author: "Anvitha Mattapalli"
-image: images/post-images/may-2021/music therapy and mental health.png
+image: /images/post-images/may-2021/music therapy and mental health.png
 excerpt: "Music is much more than a tune playing on your phone, and can help you improve your mental health."
 category: "Art & Media"
 ---

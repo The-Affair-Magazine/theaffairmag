@@ -2,8 +2,8 @@
 layout: post
 title: "Healthy Dieting"
 author: "Grace Yoon"
-image: images/post-images/may-2021/healthydieting.png
-excerpt: "95% of all diets fail, and most people under diets either regain or gain more weight as a result. That is because not all diets are very sustainable or effective. Even commonly used diets, such as the keto diet, are unreliable and unhealthy for long-term use. That is because not all diets are very sustainable or effective.Secrets to a good, healthy diet are researching one that is suited to your needs and lifestyle."
+image: /images/post-images/may-2021/healthydieting.png
+excerpt: "All diets are not very sustainable or effective. Secrets to a good, healthy diet are researching one that is suited to your needs and lifestyle."
 category: "Lifestyle"
 ---
 

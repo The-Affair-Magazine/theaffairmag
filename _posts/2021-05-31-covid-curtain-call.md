@@ -2,7 +2,7 @@
 layout: post
 title: "COVID Curtain Call"
 author: "Anvitha Mattapalli"
-image: images/post-images/may-2021/Covid Curtain-Call.png
+image: /images/post-images/may-2021/Covid Curtain-Call.png
 excerpt: "Broadway has been closed for over a year now, but plans are being made to reopen it. Is this a good idea?"
 category: "Art & Media"
 ---

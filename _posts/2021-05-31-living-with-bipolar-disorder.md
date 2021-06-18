@@ -2,10 +2,8 @@
 layout: post
 title: "Living with Bipolar Disorder"
 author: "Alda Nasywa"
-image: images/post-images/may-2021/Living with Bipolar Disorder.png
-excerpt: "Have you ever thought about what a bipolar would feel? Of course, everyone has had a bad and sweet mood. It's common for everyone, isn't it? Of course, it is, but it's different from the bipolar person. They often experience drastic changes in their moods, ones that conflict with a voice that was in their head.
-
-Then what kind of mood does a bipolar have? What are some tips for them to solve it? And what if our closest relative has Bipolar Disorder? Read through and you will find the answer!"
+image: /images/post-images/may-2021/Living with Bipolar Disorder.png
+excerpt: "What kind of mood does a bipolar have? What are some tips for them to solve it? And what if our closest relative has Bipolar Disorder?"
 category: "Lifestyle"
 ---
 
