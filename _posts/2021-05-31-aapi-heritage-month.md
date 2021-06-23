@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "AAPI Heritage Month"
-author: "Ashmita Annamalai" "Arushi Choudhary (of ColorForEmpowerment)"
-image: /images/post-images/may-2021/aapi-month.jpg
+author: "Ashmita Annamalai"
+image: /images/post-images/may-2021/Asian American Pacific Highlander.png
 excerpt: "AAPI Month pays tribute to the generations of contributions Asians and Pacific Islanders made to American society."
 category: "Politics & World Events"
 ---
