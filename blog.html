@@ -2,18 +2,20 @@
 layout: default
 ---
 
-<div class="page-container" id="categories-nav">
+<div class="page-container">
   <div class="page-title center">
     <h1 class="low-highlight">Read Our <mark>Articles</mark></h1>
-  </div>
-  <div class="page-section" style="background-color: var(--teal); opacity: .8;">
-    <div class="page-block-medium" style="flex-basis: 100%;">
+    <div class="page-block-medium" style="flex-basis: 100%; padding: 0;">
       <div class="categories-container">
         {% for category in site.categories %}
           <div class="category-btn">
             <a href="{{ category.url }}"><h2>{{ category.title }}</h2></a>
           </div>
         {% endfor %}
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" id="blog-search" placeholder="Search by title, author, or topic">
+        </div>        
       </div>
     </div>
   </div>

@@ -143,3 +143,16 @@ if(document.querySelector(".carousel-container") != null) {
   document.getElementById("prev").addEventListener("click", reverseCarousel);
 
 }
+
+searchContainer = document.querySelector(".search-container");
+searchInput = document.getElementById("blog-search");
+searchIcon = document.querySelector(".search-container i")
+
+console.log(screen.width);
+if(screen.width > 394) {
+  searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length - 5);
+}
+else {
+  searchInput.setAttribute('placeholder', "Search");
+  searchContainer.removeChild(searchIcon);
+}
