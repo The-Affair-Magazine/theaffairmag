@@ -2,7 +2,7 @@
 layout: post
 title: "Mental Health Awareness Month"
 author: "Alda Nasywa"
-image: /images/post-images/may-2021/mha-month.PNG
+image: /images/post-images/may-2021/Mental Health Awareness Month.png
 excerpt: "Mental Health Awareness Month strives to bring attention to mental health and blot out the extant stigma."
 category: "Politics & World Events"
 ---

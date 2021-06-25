@@ -144,15 +144,31 @@ if(document.querySelector(".carousel-container") != null) {
 
 }
 
-searchContainer = document.querySelector(".search-container");
-searchInput = document.getElementById("blog-search");
-searchIcon = document.querySelector(".search-container i")
+if(document.querySelector(".search-container") != null) {
 
-console.log(screen.width);
-if(screen.width > 394) {
-  searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length - 5);
+  searchContainer = document.querySelector(".search-container");
+  searchInput = document.getElementById("blog-search");
+  searchIcon = document.querySelector(".search-container i");
+  var searchInputValue;
+  console.log(screen.width);
+
+  if(screen.width > 394) {
+    searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length - 5);
+  }
+  else {
+    searchInput.setAttribute('placeholder', "Search");
+    searchContainer.removeChild(searchIcon);
+  }
+
+  searchInput.addEventListener('keydown', openSearch);
+
+  function openSearch(event) {
+    if(event.code === "Enter") {
+      searchInputValue = searchInput.value;
+      console.log(searchInputValue);
+    }       
+  }
+  
 }
-else {
-  searchInput.setAttribute('placeholder', "Search");
-  searchContainer.removeChild(searchIcon);
-}
+
+

@@ -41,6 +41,14 @@ p {
   color: black;
 }
 
+ul {
+  font-size: 18px;
+}
+
+li {
+  padding: 10px 0;
+}
+
 a:hover {
   color: #6e74b6;
 }
@@ -535,7 +543,6 @@ a:hover {
 
 .post-heading {
   margin-bottom: 0 !important;
-  width: 70%;
 }
 
 .post-category {

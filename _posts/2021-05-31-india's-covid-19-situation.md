@@ -2,7 +2,7 @@
 layout: post
 title: "India's COVID-19 Situation"
 author: "Alda Nasywa"
-image: /images/post-images/may-2021/india-covid.PNG
+image: /images/post-images/may-2021/India COVID-19 Crisis.png
 excerpt: "World Health Organization (WHO) says that India's Covid-19 situation is 'beyond heartbreaking.'"
 category: "Politics & World Events"
 ---

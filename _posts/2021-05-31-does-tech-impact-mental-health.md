@@ -2,7 +2,7 @@
 layout: post
 title: "Does Tech Impact Mental Health?"
 author: "Anvitha Mattapalli"
-image: /images/post-images/may-2021/tech-mental-health.PNG
+image: /images/post-images/may-2021/Does Technology Impact Mental Health.png
 excerpt: "We’ve all been told that too much technology is bad for you, but is it really that bad? And how?"
 category: "Tech & Design"
 ---

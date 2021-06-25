@@ -2,7 +2,7 @@
 layout: post
 title: "Jewish Immigration and the World Wars"
 author: "Parker McElroy"
-image: /images/post-images/may-2021/jewish-immigration.PNG
+image: /images/post-images/may-2021/Jewish Immigration and the World Wars.png
 excerpt: "WW1 led many countries to create new immigration policies that prevented certain people from entering..."
 category: "Politics & World Events"
 ---

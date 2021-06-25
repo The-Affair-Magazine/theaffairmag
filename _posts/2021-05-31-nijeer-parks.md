@@ -2,7 +2,7 @@
 layout: post
 title: "Nijeer Parks"
 author: "Sahithi Lingampalli"
-image: /images/post-images/may-2021/nijeer-parks.PNG
+image: /images/post-images/may-2021/Nijeer Parks.png
 excerpt: "A black man gets arrested due to facial recognition gone wrong, leading to his arrest for crimes he did not commit."
 category: "Tech & Design"
 ---
@@ -15,7 +15,7 @@ Nijeer Parks, a 31- year- old Black man living in Paterson, New Jersey, was arre
 
 At the time of the crime scene, Parks was sending money to his fiancée 30 miles away and even had a photo of the receipt’s tracking ID to corroborate his story (General & Sarlin, 2020). Despite a checked-out alibi, it still took a year to drop charges and Parks received no apology. 
 
-![nijeer-parks-photo.png]({{base.url}}/images/post-images/may-2021/nijeer-parks-photo.png)
+![nijeer-parks-photo.JPG]({{base.url}}/images/post-images/may-2021/nijeer-parks-photo.JPG)
 <center><p>Nijeer Parks on the right.</p></center>
 
 The real man belonging to the fake ID has still not been found or identified. Nijeer Parks noticed that the man has what appeared to be earrings, and Parks doesn’t even have ear piercings. Parks believes that they don’t look alike at all and the only thing they have in common is their beard (Hill, 2020). Facial recognition, while increasing in accuracy, is extremely and significantly likely to make an error in matching faces of those with a darker skin color. A national study in 2019 of over 100 facial recognition algorithms found that there was a higher rate of false-positives for Black and Asian faces compared to white faces (Hill, 2020). Nijeer Parks isn’t the only case like this; Robert Williams and Michael Oliver are other cases of Black men being arrested due to faulty facial recognition matches. 

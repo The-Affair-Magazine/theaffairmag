@@ -3,7 +3,7 @@ layout: post
 title: "How does good sleep help prevent Alzheimer's?"
 author: "Puja Suthar"
 image: /images/post-images/may-2021/How Does Good Sleep Help Prevent Alzheimers.png
-excerpt: "When you are in a deep sleep, your brain cleans out toxins that can contribute to the risk of getting Alzheimer’s. One day of no sleep or irregular sleep can disrupt this beneficial cycle of 'brainwashing.'"
+excerpt: "When you are in a deep sleep, your brain cleans out toxins that can contribute to the risk of getting Alzheimer’s. Irregular sleep can disrupt this 'brainwashing.'"
 category: "Science"
 ---
 

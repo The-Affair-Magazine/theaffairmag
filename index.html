@@ -24,7 +24,7 @@ layout: default
         {% for post in site.posts %}
           <a href="{{ post.url }}" class="post-card-post-link">
             <div class="post-card">
-              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
+              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: contain;"></div>
               <div class="card-desc">
                 <div class="post-card-heading">
                   <h2>{{ post.title }}</h2>

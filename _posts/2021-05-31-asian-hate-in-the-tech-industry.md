@@ -2,7 +2,7 @@
 layout: post
 title: "Asian Hate in the Tech Industry"
 author: "Anvitha Mattapalli"
-image: /images/post-images/may-2021/asian-hate-tech.PNG
+image: /images/post-images/may-2021/Asian Hate in the Tech Industry.png
 excerpt: "Asian hate can be seen internationally, yet it is most common in the Tech industry. This is an issue that must come to an end."
 category: "Tech & Design"
 ---

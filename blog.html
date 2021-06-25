@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="page-container">
-  <div class="page-title center">
+  <div class="page-title center" style="margin-bottom: 0;">
     <h1 class="low-highlight">Read Our <mark>Articles</mark></h1>
     <div class="page-block-medium" style="flex-basis: 100%; padding: 0;">
       <div class="categories-container">
@@ -14,7 +14,9 @@ layout: default
         {% endfor %}
         <div class="search-container">
           <i class="fas fa-search"></i>
-          <input type="text" id="blog-search" placeholder="Search by title, author, or topic">
+          <form action="/search.html" method="GET" style="display: inline;">
+            <input type="text" id="blog-search" name="query" placeholder="Search by title, author, or topic">
+          </form>         
         </div>        
       </div>
     </div>
@@ -25,7 +27,7 @@ layout: default
         {% for post in site.posts %}
           <a href="{{ post.url }}" class="post-card-post-link">
             <div class="post-card">
-              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
+              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: contain;"></div>
               <div class="card-desc">
                 <div class="post-card-heading">
                   <h2>{{ post.title }}</h2>

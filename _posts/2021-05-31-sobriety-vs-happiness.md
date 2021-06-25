@@ -2,7 +2,7 @@
 layout: post
 title: "Sobriety vs. Happiness"
 author: "Neve Walker"
-image: /images/post-images/may-2021/sobrietyvshappiness.png
+image: /images/post-images/may-2021/Sobriety vs. Happiness.png
 excerpt: "Alcohol and drug abuse is a growing problem throughout the world, but is it a problem if everyone is happy?"
 category: "Opinion"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Healthy Dieting"
 author: "Grace Yoon"
-image: /images/post-images/may-2021/healthydieting.png
+image: /images/post-images/may-2021/Healthy Dieting.png
 excerpt: "All diets are not very sustainable or effective. Secrets to a good, healthy diet are researching one that is suited to your needs and lifestyle."
 category: "Lifestyle"
 ---

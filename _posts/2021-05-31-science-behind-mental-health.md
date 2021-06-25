@@ -16,17 +16,17 @@ The Complete State Model (CSM) identifies mental well-being and mental illness o
 The development of most mental illnesses is caused by an imbalance of neurochemicals. It inhibits the brain from communicating effectively with the body, hindering a healthy response to various stimuli. Listed below are various neurochemicals that can be unsafe if processed in extreme amounts and are associated with several mental illnesses:
 
 * **Adrenaline/Epinephrine:** A hormone that helps regulate muscle contraction, heart rate, and blood pressure. It also triggers the body’s stress response, or the fight or flight response (The Science Behind Mental Health, 2018). 
- - too little adrenaline/epinephrine = cannot react properly to stressful situations
- - too much adrenaline/epinephrine = chronic stress, difficulty concentrating, dizziness, fatigue, anxiety [disorders]
+  - too little adrenaline/epinephrine = cannot react properly to stressful situations
+  - too much adrenaline/epinephrine = chronic stress, difficulty concentrating, dizziness, fatigue, anxiety [disorders]
 * **Dopamine:** A neurotransmitter that helps control the brain’s reward center. It enables our minds to perceive rewards and take steps towards them. It also helps regulate our emotional responses to numerous stimuli (The Science Behind Mental Health, 2018).
- - too little dopamine = addictive behaviors (e.g. alcohol, drug use, cravings, compulsions), depression, loss of motor control
- - too much dopamine = attention disorders, autism, mood swings, psychosis (a symptom often associated with schizophrenia)
+  - too little dopamine = addictive behaviors (e.g. alcohol, drug use, cravings, compulsions), depression, loss of motor control
+  - too much dopamine = attention disorders, autism, mood swings, psychosis (a symptom often associated with schizophrenia)
 * **Norepinephrine:** A hormone that helps mobilize the brain and body for action. It does so by affecting blood flow, increasing alertness, regulating heart rate, and speeding up reaction time (The Science Behind Mental Health, 2018). 
- - too little norepinephrine = lack of energy or focus, symptoms frequently associated with attention disorders and depression
- - too much norepinephrine = anxiety, hyperactivity, stress  
+  - too little norepinephrine = lack of energy or focus, symptoms frequently associated with attention disorders and depression
+  - too much norepinephrine = anxiety, hyperactivity, stress  
 * **Serotonin:** A neurotransmitter that helps regulate mood and social behavior, appetite and digestion, sleep, memory, and sexual desire and function (The Science Behind Mental Health, 2018). 
- - too little serotonin =  fluctuating hormones, high stress, insufficient nutrients 
- - too much serotonin = anxiety [disorders], depression, obsessive actions and thoughts (a symptom commonly associated with obsessive-compulsive disorder (OCD))
+  - too little serotonin =  fluctuating hormones, high stress, insufficient nutrients 
+  - too much serotonin = anxiety [disorders], depression, obsessive actions and thoughts (a symptom commonly associated with obsessive-compulsive disorder (OCD))
 
 ## References 
 Chowdhury, M. R. (2020, October 12). The Connections Between Positive Psychology And Mental Health. PositivePsychology.Com. [Link](https://positivepsychology.com/positive-psychology-and-mental-health/)

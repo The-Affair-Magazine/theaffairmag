@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="page-container">
+  <div class="page-title center">
+    <h1 class="low-highlight">Search Results for "<mark></mark>"</h1>
+  </div>
+  <div class="page-section">
+    <div class="page-block-medium" style="flex-basis: 100%;">
+      <div class="post-grid-container">
+      </div>
+    </div>
+  </div>
+  <script>
+    // Get and display form data from blog search page
+    formData = window.location.search;
+    if(formData.includes("+")) {
+      formData = formData.replaceAll("+", " ");     
+    }    
+    if(formData.includes("%27")) {
+      formData = formData.replaceAll("%27", "'")
+    }
+    formData = formData.replace("?query=", "");    
+    document.querySelector(".page-title h1 mark").innerHTML += formData;
+
+    // Get search.json using XHR API
+    requestURL = '{{ site.baseurl }}/search.json';
+    request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    // Display search results on json load
+    request.onload = function() {
+      var posts = request.response;
+      posts.forEach(post => {        
+        if(post.title.includes("&#39;")) {
+          post.title = post.title.replaceAll("&#39;", "'");
+        }
+        console.log(post.title)
+      });
+      console.log(posts);
+
+      for(i = 0; i < posts.length; i++) {
+        post = posts[i];       
+        formData = formData.toLowerCase(); 
+        if(post.title.toLowerCase().includes(formData) || post.excerpt.toLowerCase().includes(formData) || post.author.toLowerCase().includes(formData) || post.category.toLowerCase().includes(formData)) {
+          document.querySelector(".post-grid-container").innerHTML += `
+          <a href='${post.url}' class="post-card-post-link">
+            <div class="post-card">
+              <div class="post-card-img" style="background: url('${post.image}'); background-position: center; background-size: contain;"></div>
+              <div class="card-desc">
+                <div class="post-card-heading">
+                  <h2>${post.title}</h2>
+                  <p>${post.author}</p>
+                </div>                
+                <p>${post.excerpt}</p>
+              </div>            
+            </div>
+          </a>  
+          `;
+        }
+      }
+    }       
+  </script>
+</div>
