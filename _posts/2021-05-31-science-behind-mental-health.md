@@ -3,7 +3,7 @@ layout: post
 title: "Science Behind Mental Health"
 author: "Ashmita Annamalai"
 image: /images/post-images/may-2021/Science Behind Mental Health.png
-excerpt: "Positive psychology plays a huge role in mental well-being, but an extremity of it can cause an imbalance of neurochemicals, leading to various mental illnesses."
+excerpt: "Positive psychology plays a huge role in mental well-being, but an extremity of it can cause an imbalance of neurochemicals."
 category: "Science"
 ---
 

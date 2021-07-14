@@ -21,18 +21,67 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="page-section">
-    <div class="page-block-medium" style="flex-basis: 100%;">
-      <div class="post-grid-container"> 
-        {% for post in site.posts %}
-          <a href="{{ post.url }}" class="post-card-post-link">
+  <div class="page-section" style="justify-content: center;">
+    <div class="page-block-medium" style="flex-basis: 100%;">      
+      <div class="post-grid-container" style="align-items: flex-start;">
+        <div class="featured-posts-container">  
+          {% for post in site.posts limit:6 %}          
+            <a href="{{ post.url }}">
+              <div class="post-card">
+                <p class="post-card-category">{{ post.category }}</p>
+                <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
+                <div class="card-desc">
+                  <div class="post-card-heading">
+                    <h2>{{ post.title }}</h2>
+                    {% assign author = site.authors | where: "name", post.author | first %}
+                    <form action="{{ author.url }}">                  
+                      {% if author %}
+                        <button type="submit"><h2>{{ author.name }}</h2><button>
+                      {% endif %}
+                    </form>
+                  </div>                
+                  <p>{{ post.excerpt }}</p>
+                </div>            
+              </div>
+            </a>            
+          {% endfor %}        
+        </div>
+        <div class="posts-sidebar-container"> 
+          {% for post in site.posts limit:3 offset:6 %}            
+            <a href="{{ post.url }}">
+              <div class="post-card">
+                <p class="post-card-category">{{ post.category }}</p>
+                <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
+                <div class="card-desc">
+                  <div class="post-card-heading">
+                    <h2>{{ post.title }}</h2>
+                    {% assign author = site.authors | where: "name", post.author | first %}
+                    <form action="{{ author.url }}">                  
+                      {% if author %}
+                        <button type="submit"><h2>{{ author.name }}</h2><button>
+                      {% endif %}
+                    </form>
+                  </div>                
+                  <p>{{ post.excerpt }}</p>
+                </div>            
+              </div>
+            </a>            
+          {% endfor %}         
+        </div>
+      </div>
+    </div>
+    <div class="page-block-medium" style="flex-basis: 100%;">      
+      <div class="post-grid-container" id="main-posts">        
+        {% for post in site.posts offset:9 %}            
+          <a href="{{ post.url }}">
             <div class="post-card">
-              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: contain;"></div>
+              <p class="post-card-category">{{ post.category }}</p>
+              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
               <div class="card-desc">
                 <div class="post-card-heading">
                   <h2>{{ post.title }}</h2>
                   {% assign author = site.authors | where: "name", post.author | first %}
-                  <form action="{{author.url}}">                  
+                  <form action="{{ author.url }}">                  
                     {% if author %}
                       <button type="submit"><h2>{{ author.name }}</h2><button>
                     {% endif %}
@@ -41,9 +90,29 @@ layout: default
                 <p>{{ post.excerpt }}</p>
               </div>            
             </div>
-          </a>    
-        {% endfor %}
+          </a>            
+        {% endfor %}  
+        {% for post in site.posts %}            
+        <a href="{{ post.url }}" style="display: none;">
+          <div class="post-card" style="display: none;">
+            <p class="post-card-category">{{ post.category }}</p>
+            <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
+            <div class="card-desc">
+              <div class="post-card-heading">
+                <h2>{{ post.title }}</h2>
+                {% assign author = site.authors | where: "name", post.author | first %}
+                <form action="{{ author.url }}">                  
+                  {% if author %}
+                    <button type="submit"><h2>{{ author.name }}</h2><button>
+                  {% endif %}
+                </form>
+              </div>                
+              <p>{{ post.excerpt }}</p>
+            </div>            
+          </div>
+        </a>            
+      {% endfor %}
       </div>
     </div>
-  </div>
+  </div>    
 </div>

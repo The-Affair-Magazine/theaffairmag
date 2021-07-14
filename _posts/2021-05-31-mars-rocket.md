@@ -9,7 +9,7 @@ category: "Tech & Design"
 
 Edited by: Dominique Samantha, Uday Lingampalli, Jason Liu, Blogged by: Sahithi Lingampalli
 
-As Earth reaches its human carrying capacity, researchers have been searching for new planets to start settlements, in order to prevent human extinction. One of the most suitable planets for this is Mars, as it has the ideal temperature,gravity and water along with similar day/year lengths. SpaceX has been working on a rocket to send to the Moon and Mars. On May 5, 2021, one of their prototype rockets, called SN15, landed successfully in Southeastern Texas.
+As Earth reaches its human carrying capacity, researchers have been searching for new planets to start settlements, in order to prevent human extinction. One of the most suitable planets for this is Mars, as it has the ideal temperature, gravity, and water along with similar day/year lengths. SpaceX has been working on a rocket to send to the Moon and Mars. On May 5, 2021, one of their prototype rockets, called SN15, landed successfully in Southeastern Texas.
 
 SN15, one of the versions of Starship, was the fifth attempt SpaceX made. The fourth attempt, SN11, exploded as it was landing on Earth, shooting shrapnel on a nearby beach. The third attempt, SN10, was able to land vertically on Earth as planned, but exploded soon after. SN8 and SN9, the first two attempts, were also unsuccessful with crash landings in December and February. SN12, SN13, and SN14 were never made as the company knew SN15 would be a significant change from SN11 in terms of technology and success. SN1 through SN7 were design prototypes that were scaled down and not launched into space.
 

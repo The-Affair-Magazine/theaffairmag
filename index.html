@@ -7,7 +7,7 @@ layout: default
     <div class="page-title" id="front-page-title">
       <h1 class="low-highlight">We make it <mark>easy to read and understand current affairs.</mark></h1>
       <p class="gray">The Affair Magazine is a 501(c)(3) dedicated to making current news understandable and fun to read with engaging graphics and meaningful artwork.</p>
-      <a href="#" class="link-btn">About</a>
+      <a href="about.html" class="link-btn">About</a>
       <a href="{{ site.baseurl }}/blog.html" class="link-btn-inverted">Blog</a>
     </div>
     <div class="page-block" id="front-page-image">
@@ -22,9 +22,10 @@ layout: default
     <div class="page-block-medium" style="flex-basis: 100%; width: 100vw;">
       <div class="carousel-container">
         {% for post in site.posts %}
-          <a href="{{ post.url }}" class="post-card-post-link">
+          <a href="{{ post.url }}">
             <div class="post-card">
-              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: contain;"></div>
+              <p class="post-card-category">{{ post.category }}</p>
+              <div class="post-card-img" style="background: url('{{ post.image }}'); background-position: center; background-size: cover;"></div>
               <div class="card-desc">
                 <div class="post-card-heading">
                   <h2>{{ post.title }}</h2>
@@ -58,26 +59,14 @@ layout: default
     </div>
     <div class="page-block-medium" style="flex-basis: 100%;">
       <div class="issues-container">
-        <a target="_blank" href="https://issuu.com/theaffairmag/docs/vol_2_issue_5">
-          <div class="issue-card">
-            <img src="images/latest-issues/may-2021.jpg">
-          </div>
-        </a>
-        <a target="_blank" href="https://issuu.com/theaffairmag/docs/vol_2__issue_4">
-          <div class="issue-card">
-            <img src="images/latest-issues/april-2021.jpg">
-          </div>
-        </a>
-        <a target="_blank" href="https://issuu.com/theaffairmag/docs/vo1_2__issue_3">
-          <div class="issue-card">
-            <img src="images/latest-issues/march-2021.jpg">
-          </div>
-        </a>
-        <a target="_blank" href="https://issuu.com/theaffairmag/docs/vo1_2__issue_2">
-          <div class="issue-card">
-            <img src="images/latest-issues/february-2021.jpg">
-          </div>
-        </a>             
+        {% assign sortedIssues = site.issues | sort: 'date' | reverse %}
+        {% for issue in sortedIssues limit:4 %}
+          <a target="_blank" href="{{ issue.isuu-link }}">
+            <div class="issue-card">
+              <img src="{{ issue.image }}">
+            </div>
+          </a>
+        {% endfor %}
       </div>    
     </div>    
   </div>
@@ -94,7 +83,7 @@ layout: default
           </div>          
           <h1 style="background-color: var(--light-purple);">1</h1>
           <p>Stay up to date with our social media for any new contests or features!</p>
-          <a class="link-btn" style="background-color: var(--light-purple);">Socials</a>
+          <a class="link-btn" href="#footer-logo" style="background-color: var(--light-purple);">Socials</a>
         </div>
         <div class="get-featured-card">
           <div class="get-featured-img">
@@ -102,7 +91,7 @@ layout: default
           </div> 
           <h1 style="background-color: var(--teal);">2</h1>
           <p>Interested in doing a collab? Don’t hesitate to email us or DM our social media!</p>
-          <a class="link-btn" style="background-color: var(--teal);">Email</a>
+          <a class="link-btn" href="mailto:theaffairmag@gmail.com" style="background-color: var(--teal);">Email</a>
         </div>
         <div class="get-featured-card">
           <div class="get-featured-img">
@@ -110,7 +99,7 @@ layout: default
           </div> 
           <h1 style="background-color: var(--dark-pink);">3</h1>
           <p>Apply to be a part of our staff! Get published and show up on search results!</p>
-          <a class="link-btn" style="background-color: var(--dark-pink);">Apply</a>
+          <a class="link-btn" href="https://theaffairmag.typeform.com/to/Frldsr" style="background-color: var(--dark-pink);">Apply</a>
         </div>
       </div>      
     </div>

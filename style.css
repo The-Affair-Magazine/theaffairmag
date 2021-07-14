@@ -11,6 +11,10 @@
   src: url('fonts/Circular.ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -47,6 +51,11 @@ ul {
 
 li {
   padding: 10px 0;
+}
+
+hr {
+  border: 3px solid #BEBEBE;
+  margin: 1em 0;
 }
 
 a:hover {
@@ -290,22 +299,6 @@ a:hover {
   margin-bottom: 2em;
 }
 
-.post-card {
-  padding: 15px;
-  margin: 1em;
-  color: black;
-  border-radius: 30px;  
-  height: 350px;
-  width: 400px;
-  flex-basis: 30%;
-  position: relative;
-  z-index: 1;
-  vertical-align: bottom;
-  transition: transform 1s ease, box-shadow .5s ease, transform 1s ease;
-  background-color: white;
-  overflow: hidden;
-}
-
 .carousel-btn {
   font-size: 30px;
   transition: transform .5s ease, color .5s ease;
@@ -315,6 +308,10 @@ a:hover {
 
 .carousel-btn:hover {
   cursor: pointer;
+}
+
+.carousel-container .post-card {
+  width: 330px;
 }
 
 #prev, #next {
@@ -423,16 +420,42 @@ a:hover {
   color: white !important
 }
 
+.post-card {
+  padding: 15px;
+  margin: 1em;
+  color: black;
+  border-radius: 30px;  
+  height: 350px;
+  width: 370px;
+  position: relative;
+  z-index: 1;
+  vertical-align: bottom;
+  transition: transform 1s ease, box-shadow .5s ease, transform 1s ease;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 15px 20px rgb(43 50 92 / 5%);
+}
 
 .post-card:hover {
   transform: translateY(-7px);
   box-shadow: 0px 15px 20px rgb(43 50 92 / 15%);
 }
 
+.post-card .post-card-category {
+  font-size: 12px;
+  border-radius: 30px;
+  background-color: var(--dark-pink);
+  padding: 10px;
+  display: inline-block;
+  margin: 0 0 0 auto;
+  transition: transform .5s ease;
+}
+
 .post-card .card-desc {
   position: absolute;
   bottom: 0; 
-  padding: 10px 10px 20px 10px !important;
+  left: 0;
+  padding: 20px !important;
   line-height: 1.2em;
   text-align: left;
 }
@@ -450,12 +473,34 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2em 0;
 }
 
-.post-grid-container .post-card {
-  min-width: 300px;
+.featured-posts-container {
+  display: grid;
+  grid-template-columns: repeat(2, [col-start] 50% [col-end]);
+  grid-template-rows: repeat(3, [row-start] auto [row-end]);
+  padding: 15px;
 }
+
+.featured-posts-container .post-card {
+  height: 370px;
+  width: 370px;
+}
+
+.posts-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pink);
+  border-radius: 50px;
+  margin: 1em 0;
+  padding: 15px;
+  justify-content: center;
+}
+
+/* .posts-sidebar-container .post-card {
+  width: 330px;
+  height: 330px;
+} */
 
 .post-card .card-desc form button {
   cursor: pointer;
@@ -474,7 +519,7 @@ a:hover {
 .post-card .post-card-img {
   z-index: -5;
   position: absolute;
-  top: -53%;
+  top: -50%;
   left: 0;
   height: 100%;
   width: 100%;
@@ -601,6 +646,11 @@ a:hover {
   font-size: 22px;
 }
 
+.post-byline p {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .post-byline a {
   color: var(--teal);
 }
@@ -612,6 +662,10 @@ a:hover {
 .post-byline i, .post-byline p { 
   display: inline-block;
   padding-left: .5em;
+}
+
+.post-content p:nth-of-type(1) {
+  padding-left: 0;
 }
 
 .post-content h2 {
@@ -788,6 +842,10 @@ a:hover {
   flex-basis: 40%;
 }
 
+#footer-logo:focus {
+  outline: none !important;
+}
+
 #footer-logo img {
   max-width: 8vw;
   min-width: 200px;
@@ -798,22 +856,54 @@ a:hover {
   text-align: center;
 }
 
+.animate-scrolled {
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 1465px) {
+  .posts-sidebar-container {
+    flex-direction: row;
+  }
+  .featured-posts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 /* Toggle Carousel */ 
 @media screen and (max-width: 1182px) {
   .carousel-container {
     flex-direction: column;
     justify-content: center;
   }
-  .post-card {
-    width: auto;
+  .carousel-container .post-card {
+    width: auto !important;
   }
   .carousel-btn {
     display: none;
   }
+  .post-card, .featured-posts-container .post-card, .posts-sidebar-container .post-card {
+    width: auto;
+  }
+  .post-grid-container a, .featured-posts-container a {
+    flex-basis: 100%;
+  }
+  .featured-posts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .posts-sidebar-container {
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }  
 }
-
+ 
 /* Toggle issues buttons */
-
 @media screen and (max-width: 1244px) {
   #issues-title {
     flex-basis: 75%;
@@ -826,7 +916,6 @@ a:hover {
 }
 
 /* Toggle nav */
-
 @media screen and (max-width: 980px) {
   #toggle-btn {
     display: block;
@@ -905,6 +994,16 @@ a:hover {
   .post-heading {
     width: auto;
   }
+  .post-card .post-card-img {
+    top: -60%;
+  }
+  .get-featured-container {
+    flex-direction: column;
+  }
+  .get-featured-card {
+    margin: 0 auto 4em;
+    width: 60%;
+  }
 }
 
 
@@ -964,9 +1063,10 @@ a:hover {
   .role-desc-time {
     display: block;
     float: none;
-  }
-  .get-featured-card {
-    margin-bottom: 4em;
+  }  
+  #no-search-results {
+    width: 100%;
+    max-width: none !important;
   }
 }
 

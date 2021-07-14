@@ -12,8 +12,9 @@ layout: default
       </div>
     </div>
   </div>
+  
   <script>
-    // Get and display form data from blog search page
+    // Get and display form data from blog search form
     formData = window.location.search;
     if(formData.includes("+")) {
       formData = formData.replaceAll("+", " ");     
@@ -49,7 +50,8 @@ layout: default
           document.querySelector(".post-grid-container").innerHTML += `
           <a href='${post.url}' class="post-card-post-link">
             <div class="post-card">
-              <div class="post-card-img" style="background: url('${post.image}'); background-position: center; background-size: contain;"></div>
+              <p class="post-card-category">${post.category}</p>
+              <div class="post-card-img" style="background: url('${post.image}'); background-position: center; background-size: cover;"></div>
               <div class="card-desc">
                 <div class="post-card-heading">
                   <h2>${post.title}</h2>
@@ -58,9 +60,12 @@ layout: default
                 <p>${post.excerpt}</p>
               </div>            
             </div>
-          </a>  
-          `;
-        }
+          </a>`;
+        }       
+      }
+      if(document.querySelector(".post-grid-container").childElementCount == 0) {
+        document.querySelector(".post-grid-container").innerHTML += "<h1 style='margin: auto 0;'>No matches found<br><a href='blog.html'>Return to blog&nbsp<i class='far fa-arrow-alt-circle-right'></i></a></h1>";
+        document.querySelector(".post-grid-container").innerHTML += "<img src='images/no-search-results.svg' id='no-search-results' style='max-width: 30%'>";
       }
     }       
   </script>

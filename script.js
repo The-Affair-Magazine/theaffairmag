@@ -6,7 +6,7 @@ toggleNav = function() {
   document.getElementById("toggle-btn").classList.toggle("active");
 
   for(i = 0; i < navLinks.length; i++) {
-    if(navLinks[i].style.display !== "block") {
+    if (navLinks[i].style.display !== "block") {
       navLinks[i].style.display = "block";
       navLinks[i].classList.add("animate__animated", "animate__fadeIn");
     }
@@ -36,7 +36,7 @@ onScrollNav = function() {
 
 window.addEventListener("scroll", onScrollNav);
 
-if(document.querySelector(".carousel-container") != null) {
+if (document.querySelector(".carousel-container") != null) {
 
   var scrollMax = 2;
   var scrollMin = 0;
@@ -49,12 +49,11 @@ if(document.querySelector(".carousel-container") != null) {
     nextBtn = document.getElementById("next");  
   
     for(i = 0; i < carouselCards.length; i++) {
-      if(i > scrollMax) {
+      if (i > scrollMax) {
         carouselCards[i].style.display = "none";      
       }        
     }
   
-    console.log(carouselCards);
     scrollMin++;
     scrollMax++;
     prevBtn.style.color = "#BEBEBE";
@@ -67,21 +66,20 @@ if(document.querySelector(".carousel-container") != null) {
     prevBtn = document.getElementById("prev");
     nextBtn = document.getElementById("next");   
   
-    if(scrollMin == 0) {
-      if(scrollMax < carouselLength) {
+    if (scrollMin == 0) {
+      if (scrollMax < carouselLength) {
         scrollMin++;
         scrollMax++;
       } 
     }
   
     for(i = 0; i < carouselCards.length; i++) {
-      if(i < scrollMin || i > scrollMax) {
-         carouselCards[i].style.display = "none";
-         console.log("Hide elements");     
+      if (i < scrollMin || i > scrollMax) {
+         carouselCards[i].style.display = "none";   
       }
       else {
         carouselCards[i].style.display = "block";
-        if(carouselCards[i].classList.contains("animate__slideInLeft")) {
+        if (carouselCards[i].classList.contains("animate__slideInLeft")) {
           carouselCards[i].classList.remove("animate__slideInLeft");
           carouselCards[i].classList.add("animate__slideInRight");
         }
@@ -90,14 +88,14 @@ if(document.querySelector(".carousel-container") != null) {
     console.log(`Scroll max: ${scrollMax}, Scroll min: ${scrollMin}`);    
   
     prevBtn.style.color = "var(--teal)";
-    if(scrollMax === carouselLength) {
+    if (scrollMax === carouselLength) {
       nextBtn.style.color = "#BEBEBE";
     }
     else {
       nextBtn.style.color = "var(--teal)";
     }
   
-    if(scrollMax < carouselLength) {
+    if (scrollMax < carouselLength) {
       scrollMin++;
       scrollMax++;
     }  
@@ -109,20 +107,19 @@ if(document.querySelector(".carousel-container") != null) {
     prevBtn = document.getElementById("prev");
     nextBtn = document.getElementById("next");
   
-    if(scrollMin > 0) {
+    if (scrollMin > 0) {
       scrollMin--;
       scrollMax--;
     } 
   
     for(i = 0; i < carouselCards.length; i++) {
-      if(i < scrollMin || i > scrollMax) {
-         carouselCards[i].style.display = "none";
-         console.log("Hide elements");     
+      if (i < scrollMin || i > scrollMax) {
+         carouselCards[i].style.display = "none"; 
       }
       else {
         carouselCards[i].style.display = "block";
   
-        if(carouselCards[i].classList.contains("animate__slideInRight")) {
+        if (carouselCards[i].classList.contains("animate__slideInRight")) {
           carouselCards[i].classList.remove("animate__slideInRight");
           carouselCards[i].classList.add("animate__slideInLeft");
         }      
@@ -131,7 +128,7 @@ if(document.querySelector(".carousel-container") != null) {
     console.log(`Scroll max: ${scrollMax}, Scroll min: ${scrollMin}`);
   
     nextBtn.style.color = "var(--teal)";
-    if(scrollMin == 0) {
+    if (scrollMin == 0) {
       prevBtn.style.color = "#BEBEBE";
     }
     else {
@@ -144,31 +141,56 @@ if(document.querySelector(".carousel-container") != null) {
 
 }
 
-if(document.querySelector(".search-container") != null) {
+if (document.querySelector(".search-container") != null) {
 
   searchContainer = document.querySelector(".search-container");
   searchInput = document.getElementById("blog-search");
   searchIcon = document.querySelector(".search-container i");
   var searchInputValue;
-  console.log(screen.width);
 
-  if(screen.width > 394) {
+  if (screen.width > 394) {
     searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length - 5);
   }
   else {
     searchInput.setAttribute('placeholder', "Search");
     searchContainer.removeChild(searchIcon);
-  }
-
-  searchInput.addEventListener('keydown', openSearch);
-
-  function openSearch(event) {
-    if(event.code === "Enter") {
-      searchInputValue = searchInput.value;
-      console.log(searchInputValue);
-    }       
-  }
-  
+  }  
 }
 
+// Fade in on scroll
 
+scrollOffset = 0;
+if (document.querySelector(".page-container > img") != null) {
+  scrollElements = document.querySelectorAll(".page-container > div, .wave");
+}
+else {
+  scrollElements = document.querySelectorAll(".page-container > div");
+}
+
+scrollElements.forEach(scrollElement => {
+  scrollElement.style.opacity = 0;
+  scrollElement.style.transition = "opacity .5s ease";
+});
+
+scrollElements[0].style.opacity = "1";
+if (document.querySelector(".post-grid-container") != null || document.querySelector(".role-descs") != null) {
+  scrollElements[1].style.opacity = "1";
+}
+
+const elementInView = (element, offset = 0) => {
+  const elementTop = element.getBoundingClientRect().top;
+  return elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset);
+};
+
+const animateOnScroll = () => {
+  scrollElements.forEach(scrollElement => {
+    if (elementInView(scrollElement, scrollOffset)) {
+      scrollElement.classList.add('animate-scrolled');
+      console.log("Element in view");
+    } 
+  });  
+}
+
+window.addEventListener('scroll', () => {;
+  animateOnScroll();
+});

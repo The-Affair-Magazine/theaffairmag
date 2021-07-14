@@ -28,3 +28,5 @@ collections:
   categories: 
     title: Categories
     output: true
+  issues:
+    title: Issues
