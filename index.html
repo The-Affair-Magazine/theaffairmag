@@ -53,7 +53,7 @@ layout: default
       <h1>Read our latest issues!</h1>      
     </div>
     <div class="page-block issues-btn-container">
-      <a target="_blank" href="https://issuu.com/theaffairmag" class="link-btn-inverted">Isuu</a>
+      <a target="_blank" href="https://issuu.com/theaffairmag" class="link-btn-inverted">Issuu</a>
       <a href="https://fliphtml5.com/homepage/rvtbt" class="link-btn-inverted">FlipHTML5</a>
       <a href="https://issuu.com/theaffairmag" class="link-btn">See More</a>
     </div>
@@ -61,7 +61,7 @@ layout: default
       <div class="issues-container">
         {% assign sortedIssues = site.issues | sort: 'date' | reverse %}
         {% for issue in sortedIssues limit:4 %}
-          <a target="_blank" href="{{ issue.isuu-link }}">
+          <a target="_blank" href="{{ issue.issuu-link }}">
             <div class="issue-card">
               <img src="{{ issue.image }}">
             </div>
