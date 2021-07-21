@@ -3,7 +3,7 @@ layout: post
 title: "Anti-Muslim Bias in Canada"
 author: "Neve Walker"
 image: /images/post-images/june-2021/Anti-Muslim Bias in Canada.png
-excerpt: "Although Canada is known for its inclusivity and neutrality, there are still hate crime being committed against minorities, especially Muslims."
+excerpt: "Although Canada is known for its inclusivity and neutrality, there are still hate crimes being committed against Muslims."
 category: "Politics & World Events"
 ---
 Edited by: Myint Myat Theingi & Harvi Karatha, Blogged by Sahithi Lingampalli

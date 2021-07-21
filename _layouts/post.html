@@ -19,7 +19,7 @@
       </a>
       <div id="toggle-btn"><i class="fas fa-bars"></i></div>
       <a class="nav-link" href="{{ site.baseurl }}/join-us.html">Get Involved</a>
-      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="{{ site.baseurl }}/about.html">About</a>
       <a class="nav-link" href="#">Opportunities</a>
       <a class=".nav link nav-link-bold" href="{{ site.baseurl }}/blog.html">Articles</a>
     </header>
@@ -34,13 +34,27 @@
           <a href="{{ category.url }}">{{ page.category }}</a>
         </span>
         <h2><em>{{ page.excerpt }}</em></h2>
-        <div class="post-byline">        
-          {% assign author = site.authors | where: 'name', page.author | first %}
-          {% if author %}
-            <p>By: <a href="{{ author.url }}">{{ author.name }}</a></p>
-          {% else %}
-            <p>By: The Affair Mag</p>
-          {% endif %}
+        <div class="post-byline">  
+          <p>By: 
+            {% if page.author.size == 2 %}
+              {% for i in (0..1) %}
+                {% assign author = site.authors | where: 'name', page.author[i] | first %}
+                {% if i == 0 %}
+                  <a href="{{ author.url }}">{{ author.name }}</a> & 
+                {% endif %}
+                {% if i == 1 %}
+                  <a href="{{ author.url }}">{{ author.name }}</a>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              {% assign author = site.authors | where: 'name', page.author | first %}
+              {% if author %}
+                <a href="{{ author.url }}">{{ author.name }}</a>
+              {% else %}
+                By: The Affair Mag
+              {% endif %}
+            {% endif %}
+          </p>          
         </div>                
       </div>
       <div class="page-section">

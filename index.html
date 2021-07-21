@@ -61,7 +61,7 @@ layout: default
       <div class="issues-container">
         {% assign sortedIssues = site.issues | sort: 'date' | reverse %}
         {% for issue in sortedIssues limit:4 %}
-          <a target="_blank" href="{{ issue.issuu-link }}">
+          <a target="_blank" href="{{ issue.isuu-link }}" rel="external">
             <div class="issue-card">
               <img src="{{ issue.image }}">
             </div>

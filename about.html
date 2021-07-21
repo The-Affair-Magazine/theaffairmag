@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="page-container">
+  <div class="page-title center">
+    <h1 class="low-highlight">Meet Our <mark>Staff!</mark></h1>    
+  </div>
+  <div class="page-section">
+    <div class="page-block-small" style="flex-basis: 40%;">
+      <img src="images/about.png" style="width: 100%;">
+    </div>
+    <div class="page-block" style="flex-basis: 60%;">
+      <p>The Affair Magazine is a 501(c)(3) dedicated to making current news understandable and fun to read with engaging graphics and meaningful artwork. During the process of putting together each issue, our staff members have the opportunities to strengthen their writing, organization, communication, editing, teamwork, art, design, and speaking skills!</p>
+      <p>Our staff members also, in the process of editing, doing artwork, or designing an article, read the articles and are more informed! We remain bipartisan and unbiased in our articles, and strive to cover important and interesting topics. Our art and media section covers the important entertainment and art news, while our lifestyle section covers topics like mental or physical health. Science, tech, and politics/world events cover their namesake topics respectively. Our opinion section allows for student voices to be heard, and for opinions to maybe even start friendly debates! </p>
+      <p>We have a place for everyone here, no matter what your skills (or no skills) are! We are ready to teach you whatever you are interested in, and help you in being an essential part of our team!</p>
+    </div>
+    
+  </div>
+  <div class="page-section">    
+    <div class="page-block-medium" style="flex-basis: 100%;">      
+      <div class="staff-container">
+        <div class="section-title staff">
+          <h1 style="color: var(--light-purple);"><span>Executives</span></h1>
+        </div>
+        {% assign sortedStaff = site.staff | sort: 'order' %}
+        {% for staff in sortedStaff %}
+          {% if staff.position == "Executive" %}
+          <div class="staff-card">
+            <div class="staff-pic" style="background-image: url('{{ staff.image }}'); background-size: cover;"></div>
+            <h3 style="color: var(--light-purple);">{{ staff.name }}</h3>            
+            {% for title in staff.title %}
+              <h3 style="color: #BEBEBE; margin: 0;">{{ title }}</h3>
+            {% endfor %}            
+          </div>
+          {% endif %}
+        {% endfor %}      
+      </div>            
+    </div>
+  </div>
+  <div class="page-section">    
+    <div class="page-block-medium" style="flex-basis: 100%;">      
+      <div class="staff-container">
+        <div class="section-title staff">
+          <h1 style="color: var(--teal);"><span>Directors</span></h1>
+        </div>
+        {% for staff in sortedStaff %}
+          {% if staff.position == "Director" %}
+          <div class="staff-card">
+            <div class="staff-pic" style="background-image: url('{{ staff.image }}'); background-size: cover;"></div>
+            <h3 style="color: var(--teal);">{{ staff.name }}</h3>            
+            {% for title in staff.title %}
+              <h3 style="color: #BEBEBE; margin: 0;">{{ title }}</h3>
+            {% endfor %}            
+          </div>
+          {% endif %}
+        {% endfor %}        
+      </div>            
+    </div>
+  </div>
+</div>

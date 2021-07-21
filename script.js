@@ -172,11 +172,6 @@ scrollElements.forEach(scrollElement => {
   scrollElement.style.transition = "opacity .5s ease";
 });
 
-scrollElements[0].style.opacity = "1";
-if (document.querySelector(".post-grid-container") != null || document.querySelector(".role-descs") != null) {
-  scrollElements[1].style.opacity = "1";
-}
-
 const elementInView = (element, offset = 0) => {
   const elementTop = element.getBoundingClientRect().top;
   return elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset);
@@ -186,11 +181,13 @@ const animateOnScroll = () => {
   scrollElements.forEach(scrollElement => {
     if (elementInView(scrollElement, scrollOffset)) {
       scrollElement.classList.add('animate-scrolled');
-      console.log("Element in view");
     } 
   });  
 }
 
 window.addEventListener('scroll', () => {;
+  animateOnScroll();
+});
+window.addEventListener('load', () => {;
   animateOnScroll();
 });

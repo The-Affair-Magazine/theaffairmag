@@ -3,7 +3,7 @@ layout: post
 title: "How Solar Eclipse Glasses Work"
 author: "Anvitha Mattapalli"
 image: /images/post-images/june-2021/How Solar Eclipses Glasses Work.png
-excerpt: "We’re always told never to look directly at the sun or solar eclipses. Instead, we have to wear solar eclipse glasses, but how exactly do they work?"
+excerpt: "We’re always told never to look directly at the sun or solar eclipses and instead wear solar eclipse glasses; but how do they work?"
 category: "Tech & Design"
 ---
 Edited by: Dominique Samantha & Nivi Chozhan, Blogged by Sahithi Lingampalli

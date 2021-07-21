@@ -3,7 +3,7 @@ layout: post
 title: "The Afghanistan War"
 author: "Neve Walker"
 image: /images/post-images/june-2021/Afghanistan War.png
-excerpt: "The Afghanistan War is far from over, so why is no one talking about it? A brief description of the plan Biden has to remove all troops from Afghanistan."
+excerpt: "The Afghanistan War is far from over despite Biden's plans, so why is no one talking about it?"
 category: "Politics & World Events"
 ---
 Edited by: Myint Myat Theingi, Blogged by Sahithi Lingampalli

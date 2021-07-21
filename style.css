@@ -137,7 +137,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 .page-container div {
@@ -393,7 +393,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  padding-bottom: 2em;
+  padding-bottom: 5em;
 }
 
 .get-featured-card {
@@ -584,6 +584,7 @@ a:hover {
   border-bottom: 3px solid var(--teal);
 }
 
+
 /* Blog posts (article pages) */
 
 .post-heading {
@@ -684,6 +685,7 @@ a:hover {
   padding-top: 0;
 }
 
+
 /* Join Us page */
 
 .accordion {
@@ -745,10 +747,6 @@ a:hover {
   transform: rotate(90deg);  
 }
 
-/* .accordion details[open] > summary {
-  color: #8187c9;
-} */
-
 .accordion.role-descs details[open]:nth-of-type(3n + 1) > summary {
   color: var(--teal);
 }
@@ -768,7 +766,7 @@ a:hover {
 
 .role-desc-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   padding-left: 30px;
 }
@@ -777,12 +775,54 @@ a:hover {
   flex-basis: 10%;
 }
 
-.role-desc-card .role-desc-text {
-  flex-basis: 80%;
+.role-desc-card img {
+  display: inline-block;
+  float: left;
+  padding: 30px;
 }
 
 #issues-title {
   flex-basis: auto;
+}
+
+
+/* About page */
+
+.section-title.staff {
+  flex-basis: 100%;
+  margin-top: -2em;
+  padding-left: 50px;
+}
+
+.section-title.staff span {
+  background-color: white; 
+  padding: 0 15px;
+}
+
+.staff-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  border: 1px solid #BEBEBE;
+  padding-bottom: 4em;
+}
+
+.staff-card {
+  box-sizing: border-box;
+  flex-basis: 15%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 1.5em;
+}
+
+.staff-card .staff-pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 15px 20px rgb(43 50 92 / 15%);
 }
 
 
@@ -948,6 +988,9 @@ a:hover {
   .page-section {
     justify-content: center;
   }
+  .page-block {
+    padding-left: 100px;
+  }
   .page-section > div {
     flex-basis: 100% !important;
   }
@@ -974,14 +1017,13 @@ a:hover {
   }
   .author-card {
     flex-direction: column;
-    height: 100%;
     text-align: center;
   }
   .author-card .author-info {
     flex-basis: 50% !important;
   }
   .author-card .author-pic {
-    margin: 0 !important;
+    margin: 0 0 2em 0 !important;
     width: 100px;
     height: 100px;
   }
@@ -999,6 +1041,7 @@ a:hover {
   }
   .get-featured-container {
     flex-direction: column;
+    padding-bottom: 2em;
   }
   .get-featured-card {
     margin: 0 auto 4em;
@@ -1034,12 +1077,18 @@ a:hover {
     margin-bottom: 1.5em !important;
   }
   .page-block {
-    padding: 25px 50px 50px 0;
+    padding: 25px 50px 50px;
     margin-bottom: 1.5em !important;
   }
   .section-title {
     padding: 25px 50px 50px;
     margin: .5em 0;
+  }
+  .section-title.staff {
+    padding-left: 25px;
+  }
+  .staff-container {
+    padding-bottom: 2em;
   }
   .page-title {
     margin: 1em 0;
@@ -1060,10 +1109,9 @@ a:hover {
   .role-desc-card p {
     flex-basis: 100%;
   }
-  .role-desc-time {
-    display: block;
-    float: none;
-  }  
+  .role-desc-card {
+    padding-left: 0;
+  }   
   #no-search-results {
     width: 100%;
     max-width: none !important;
@@ -1089,9 +1137,9 @@ a:hover {
     padding: 12px 25px 30px;
   }
   .page-block {
-    padding: 12px 25px 30px 0;
+    padding: 12px 25px 30px;
   }
-  .page-container div {
+  .page-container > div {
     flex-basis: 100%;
   }
   #front-page-title {
@@ -1105,10 +1153,16 @@ a:hover {
     font-size: 15px;
   }
   .role-card {
-    padding: 0;
-    padding-bottom: 2em;
+    padding: 0 10px 2em;
   }
+  .role-desc-time {
+    display: block !important;
+    float: none !important;
+  } 
   .categories-container .category-btn h2 {
     margin: 0;
+  }
+  .section-title.staff {
+    padding-left: 12px;
   }
 }

@@ -30,3 +30,7 @@ collections:
     output: true
   issues:
     title: Issues
+  jobs: 
+    title: Jobs
+  staff:
+    title: Staff
