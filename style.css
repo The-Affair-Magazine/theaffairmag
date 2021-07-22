@@ -984,6 +984,9 @@ a:hover {
     margin: 0;
     flex-basis: 100%;
   }
+  #front-page-title-section {
+    margin-top: 0 !important;
+  }
   .page-section {
     justify-content: center;
   }
