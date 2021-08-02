@@ -825,6 +825,51 @@ a:hover {
 }
 
 
+/* Opportunities page */
+.opportunities-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.opportunities-container a {
+  box-sizing: border-box;
+  flex-basis: auto;
+}
+
+.opportunities-container .opportunity-card {
+  margin-bottom: 2em;
+  position: relative;
+  border-radius: 65px;
+  box-shadow: 0px 15px 20px rgb(43 50 92 / 10%);
+  transition: box-shadow .5s ease;
+}
+
+.opportunity-card:hover {
+  box-shadow:  0px 15px 20px rgb(43 50 92 / 15%);
+}
+
+.opportunity-card .opportunity-desc {
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 45px 45px;
+}
+
+.opportunity-card .opportunity-desc p {
+  padding: 0;
+}
+
+.opportunity-card .opportunity-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Scrollbar */
 
  ::-webkit-scrollbar {

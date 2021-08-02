@@ -34,3 +34,5 @@ collections:
     title: Jobs
   staff:
     title: Staff
+  opportunities:
+    title: Opportunities

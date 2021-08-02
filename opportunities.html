@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="page-container">
+  <div class="page-title center">
+    <h1 class="low-highlight">Find an <mark>Opportunity</mark></h1>
+  </div>
+  <div class="page-section">
+    <div class="page-block-medium" style="flex-basis: 100%;">
+      <div class="opportunities-container">
+        {% for opportunity in site.opportunities %}
+        <a href="{{ opportunity.link }}" rel="external">
+          <div class="opportunity-card">
+            <img class="opportunity-img" src="{{ opportunity.image }}">
+            <div class="opportunity-desc">
+              <h3>{{ opportunity.title }}</h3>
+              <p>{{ opportunity.desc }}</p>
+            </div>
+          </div>
+        </a>        
+        {% endfor %}
+      </div>  
+    </div>      
+  </div>
+</div>
